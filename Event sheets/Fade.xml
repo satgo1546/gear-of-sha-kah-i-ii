@@ -22,7 +22,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="3779555926785811" type="System">
                             <param id="0" name="Object to create">TileBG_BlackFade</param>
-                            <param id="1" name="Layer">0</param>
+                            <param id="1" name="Layer">&quot;Fade&quot;</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
@@ -65,7 +65,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="7767813240713667" type="System">
                             <param id="0" name="Object to create">TileBG_WhiteFade</param>
-                            <param id="1" name="Layer">0</param>
+                            <param id="1" name="Layer">&quot;Fade&quot;</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
