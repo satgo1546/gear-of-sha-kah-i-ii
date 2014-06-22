@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -98,18 +99,47 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="Function" sid="3271979828499938">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="TileBG_BlackFade" sid="428002502060984">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="1658401526702733">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="6827829408732834">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TileBG_WhiteFade" sid="6974706945353259">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="5821054951212077">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="5668159841466229">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>Logo.xml</layout>
         <layout>Game.xml</layout>
         <layout>Title.xml</layout>
+        <layout>Dummy.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Logo.xml</event-sheet>
         <event-sheet>Game.xml</event-sheet>
         <event-sheet>Title.xml</event-sheet>
         <event-sheet>MovingDecorations.xml</event-sheet>
+        <event-sheet>Fade.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
@@ -136,6 +166,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="7" />
+        <global-instance type="Function" uid="11" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />

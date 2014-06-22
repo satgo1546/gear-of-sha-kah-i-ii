@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Fade</name>
+    <events>
+        <event-block sid="6865947676162269">
+            <conditions>
+                <condition id="0" name="On function" sid="6598786738096992" type="Function">
+                    <param id="0" name="Name">&quot;fade&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4092976421204885">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="9902762403846343" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;black&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3779555926785811" type="System">
+                            <param id="0" name="Object to create">TileBG_BlackFade</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="955830168295209">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="1529475413849344" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;in&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="5907965013799578" type="TileBG_BlackFade" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="2928837867281153">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="287965728357712" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;out&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="8195768207506627" type="TileBG_BlackFade" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4357824373364971">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="959671245582114" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;white&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7767813240713667" type="System">
+                            <param id="0" name="Object to create">TileBG_WhiteFade</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="593598833169777">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="4905222368479642" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;in&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="2841189819725284" type="TileBG_WhiteFade" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="9448224356895294">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="6843659802363264" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;out&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="2782936457630132" type="TileBG_WhiteFade" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -3,6 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Title</name>
     <events>
+        <include>Fade</include>
         <include>MovingDecorations</include>
+        <event-block sid="2059882940062065">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2465147773004746" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="8513935637419227" type="Function">
+                    <param id="0" name="Name">&quot;fade&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
