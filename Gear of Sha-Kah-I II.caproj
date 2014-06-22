@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Gear of Sha-Kah-I II</name>
+    <description></description>
+    <version>0.0.1</version>
+    <author>satgo1546</author>
+    <author-email>satgo1546@yeah.net</author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>2qpiupr2gjili</unique-id>
+    <saved-with-version>17300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox integer scale</prop>
+        <prop name="Fullscreen scaling">Low quality</prop>
+        <prop name="Fullscreen scaling quality">Low</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use iOS retina display">All devices</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="WebStorage" sid="1510269620771624">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type name="Keyboard" sid="4436305314906168">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="3506161195311074">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Touch" sid="2463496682349194">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Audio" sid="2722091819329769">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Browser" sid="3498868852026895">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Sprite_Logo" sid="5922151788229895">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="4952798334119258">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9350243097952365" speed="5">
+                    <frame duration="1" hotspotX="0.500785" hotspotY="0.501333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>Layout 1.xml</layout>
+        <layout>Logo.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Logo.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="WebStorage" uid="1" />
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Mouse" uid="4" />
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="6">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="7" />
+    </global-instances>
+    <sounds-folder expanded="1" />
+    <music-folder expanded="1" />
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

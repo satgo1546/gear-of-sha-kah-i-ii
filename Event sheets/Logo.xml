@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logo</name>
+    <events>
+        <event-block sid="9396047602255129">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="591622857326145" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="9911413129414744" type="Sprite_Logo" />
+            </actions>
+        </event-block>
+        <event-block sid="8371965383290288">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade out finished" sid="1824456504844656" type="Sprite_Logo" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
