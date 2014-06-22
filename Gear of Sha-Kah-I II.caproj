@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -127,6 +128,31 @@
             </behaviors>
             <texture />
         </object-type>
+        <object-type name="Sprite_Text" sid="474806429150648">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
+                    <frame duration="1" hotspotX="0.494444" hotspotY="0.491758">
+                        <collision-poly>
+                            <point x="0.0611111" y="0.200549" />
+                            <point x="0.494444" y="0.00274725" />
+                            <point x="0.87963" y="0.271978" />
+                            <point x="0.968518" y="0.491758" />
+                            <point x="0.790741" y="0.57967" />
+                            <point x="0.494444" y="0.997253" />
+                            <point x="0.00185185" y="0.491758" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="9patch_Data" sid="6048093377491594">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -134,6 +160,7 @@
         <layout>Game.xml</layout>
         <layout>Title.xml</layout>
         <layout>Dummy.xml</layout>
+        <layout>Saves.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Logo.xml</event-sheet>
@@ -141,6 +168,7 @@
         <event-sheet>Title.xml</event-sheet>
         <event-sheet>MovingDecorations.xml</event-sheet>
         <event-sheet>Fade.xml</event-sheet>
+        <event-sheet>Saves.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
