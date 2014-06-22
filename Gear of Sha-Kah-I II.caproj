@@ -78,11 +78,9 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
         <layout>Logo.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Logo.xml</event-sheet>
     </event-folder>
     <global-instances>
