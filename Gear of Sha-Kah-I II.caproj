@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
@@ -75,13 +76,40 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TileBG_SystemDecorationUpper" sid="2197899839199062">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TileBG_SystemDecorationLower" sid="7856386621459347">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite_BGs" sid="9054088893890637">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5810124867094475" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TileBG_Black" sid="9913164099245486">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>Logo.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>Title.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Logo.xml</event-sheet>
+        <event-sheet>Game.xml</event-sheet>
+        <event-sheet>Title.xml</event-sheet>
+        <event-sheet>MovingDecorations.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />

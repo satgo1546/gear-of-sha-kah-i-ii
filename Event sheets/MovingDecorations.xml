@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MovingDecorations</name>
+    <events>
+        <event-block sid="6447334448385362">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8755008963615932" type="System">
+                    <param id="0" name="Interval (seconds)">0.02</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="9504798034391671" type="TileBG_SystemDecorationUpper">
+                    <param id="0" name="X">TileBG_SystemDecorationUpper.X - 1</param>
+                </action>
+                <action id="-1" name="Set X" sid="6625960259383676" type="TileBG_SystemDecorationLower">
+                    <param id="0" name="X">TileBG_SystemDecorationLower.X - 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4952239133274821">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="3432576484693098" type="TileBG_SystemDecorationUpper">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-TileBG_SystemDecorationUpper.Width / 2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="1013908677672077" type="TileBG_SystemDecorationUpper">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7633917136168612">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="7241331391157482" type="TileBG_SystemDecorationLower">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-TileBG_SystemDecorationLower.Width / 2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="7357936249870841" type="TileBG_SystemDecorationLower">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
