@@ -8,6 +8,9 @@
                 <condition id="7" name="Cursor is over object" sid="554607223931086" type="Mouse">
                     <param id="0" name="Object">Sprite_Text</param>
                 </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="6901691055348136" type="Sprite_Text">
+                    <param id="0" name="Instance variable">Button</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="8484005510500578" type="TileBG_Selection">
