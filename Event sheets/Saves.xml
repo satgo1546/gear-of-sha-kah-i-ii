@@ -77,5 +77,34 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5964171279257821">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1687561998117645" type="Mouse">
+                    <param id="0" name="Object">9patch_Data</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8212083735082712" type="Sprite_Player_Data">
+                    <param id="0" name="Instance variable">Slot</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9patch_Data.Slot</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2063960818920467" type="Sprite_Player_Data">
+                    <param id="0" name="Animation">&quot;Selecting&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7118123637446003">
+            <conditions>
+                <condition id="-22" name="Else" sid="1965642076538059" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5559986977844577" type="Sprite_Player_Data">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
