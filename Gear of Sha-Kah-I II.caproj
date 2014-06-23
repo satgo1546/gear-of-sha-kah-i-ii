@@ -23,6 +23,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -153,6 +154,11 @@
         </object-type>
         <object-type name="TileBG_Selection" sid="6181782718805682">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="3601795444240078">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <texture />
         </object-type>
     </object-folder>
