@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TextButtons</name>
+    <events>
+        <event-block sid="1714226988456175">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="554607223931086" type="Mouse">
+                    <param id="0" name="Object">Sprite_Text</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="8484005510500578" type="TileBG_Selection">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="3974331211232523" type="TileBG_Selection">
+                    <param id="0" name="X">Sprite_Text.X</param>
+                    <param id="1" name="Y">Sprite_Text.Y</param>
+                </action>
+                <action id="-7" name="Set size" sid="7609367646315488" type="TileBG_Selection">
+                    <param id="0" name="Width">Sprite_Text.Width</param>
+                    <param id="1" name="Height">Sprite_Text.Height</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7954344813599329">
+            <conditions>
+                <condition id="-22" name="Else" sid="701356935241934" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2215125014589616" type="TileBG_Selection">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

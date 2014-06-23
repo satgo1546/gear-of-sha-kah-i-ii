@@ -130,10 +130,14 @@
         </object-type>
         <object-type name="Sprite_Text" sid="474806429150648">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Button" sid="6692454491779735" type="boolean" />
+                <instance-variable name="ButtonTag" sid="8226274857943556" type="string" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
                     <frame duration="1" hotspotX="0.501845" hotspotY="0.502732" />
-                    <frame duration="1" hotspotX="0.501805" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.501859" hotspotY="0.509434" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -145,6 +149,10 @@
         </object-type>
         <object-type name="9patch_Data" sid="6048093377491594">
             <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="TileBG_Selection" sid="6181782718805682">
+            <plugin id="TiledBg" />
             <texture />
         </object-type>
     </object-folder>
@@ -163,6 +171,7 @@
         <event-sheet>MovingDecorations.xml</event-sheet>
         <event-sheet>Fade.xml</event-sheet>
         <event-sheet>Saves.xml</event-sheet>
+        <event-sheet>TextButtons.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
