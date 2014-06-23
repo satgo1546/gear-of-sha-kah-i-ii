@@ -48,7 +48,12 @@
                             <param id="2" name="Value">&quot;load-data&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Call function" sid="4360270366909236" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>

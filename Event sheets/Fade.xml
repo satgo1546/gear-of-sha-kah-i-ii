@@ -27,6 +27,10 @@
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
+                        <action id="-7" name="Set size" sid="6436459091814297" type="TileBG_BlackFade">
+                            <param id="0" name="Width">LayoutWidth</param>
+                            <param id="1" name="Height">LayoutHeight</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="955830168295209">
@@ -70,6 +74,10 @@
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
+                        <action id="-7" name="Set size" sid="4784398759464726" type="TileBG_BlackFadeSlow">
+                            <param id="0" name="Width">LayoutWidth</param>
+                            <param id="1" name="Height">LayoutHeight</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="4340772164674669">
@@ -112,6 +120,10 @@
                             <param id="1" name="Layer">&quot;Fade&quot;</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="5455135181758406" type="TileBG_WhiteFade">
+                            <param id="0" name="Width">LayoutWidth</param>
+                            <param id="1" name="Height">LayoutHeight</param>
                         </action>
                     </actions>
                     <sub-events>

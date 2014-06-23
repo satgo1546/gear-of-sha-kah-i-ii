@@ -22,8 +22,11 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -137,10 +140,25 @@
                 <instance-variable name="ButtonTag" sid="8226274857943556" type="string" />
             </instance-variables>
             <animation-folder expanded="1">
-                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
+                <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
                     <frame duration="1" hotspotX="0.501845" hotspotY="0.502732" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.501859" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.509434">
+                        <collision-poly>
+                            <point x="0.008" y="0.0188679" />
+                            <point x="0.984" y="0.0377358" />
+                            <point x="0.936" y="0.490566" />
+                            <point x="0.936" y="0.849057" />
+                            <point x="0.016" y="0.962264" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -151,6 +169,9 @@
         </object-type>
         <object-type name="9patch_Data" sid="6048093377491594">
             <plugin id="NinePatch" />
+            <instance-variables>
+                <instance-variable name="Slot" sid="8841501868039252" type="number" />
+            </instance-variables>
             <texture />
         </object-type>
         <object-type name="TileBG_Selection" sid="6181782718805682">
@@ -173,6 +194,60 @@
                 </behavior-type>
             </behaviors>
             <texture />
+        </object-type>
+        <object-type name="Camera" sid="8439885572626803">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="6111025631604263">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="7377244308614984">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="3482301979479917">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Sprite_ScrollButtons" sid="8868911997944007">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="NormalFrame" sid="362528038488198" type="number" />
+                <instance-variable name="HoverFrame" sid="7623360037635825" type="number" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9767387835840418" speed="0">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.924528" y="0" />
+                            <point x="0.462264" y="0.886719" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.396226" hotspotY="0.28125">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.924528" y="0" />
+                            <point x="0.462264" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.462264" y="0" />
+                            <point x="0.924528" y="0.875" />
+                            <point x="0" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.396226" hotspotY="0.28125">
+                        <collision-poly>
+                            <point x="0.462264" y="0" />
+                            <point x="0.924528" y="0.875" />
+                            <point x="0" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
