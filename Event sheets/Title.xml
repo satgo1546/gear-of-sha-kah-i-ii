@@ -38,7 +38,18 @@
                             <param id="2" name="Value">&quot;new-game&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Call function" sid="8315096996239369" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="498461252895981" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7646526166230276" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="9801734665460358">
                     <conditions>
@@ -52,6 +63,12 @@
                         <action id="0" name="Call function" sid="4360270366909236" type="Function">
                             <param id="0" name="Name">&quot;fade&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3658266045844949" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3676434708473738" type="System">
+                            <param id="0" name="Layout">Saves</param>
                         </action>
                     </actions>
                 </event-block>

@@ -3,7 +3,23 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
+        <include>Fade</include>
         <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
+        <event-block sid="2105966368120164">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2040122900933751" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="8994375235845949" type="Function">
+                    <param id="0" name="Name">&quot;fade&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black&quot;</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="1149827246109178" type="System">
+                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                    <param id="1" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="6352494227925687">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="1986849531484238" type="System">
