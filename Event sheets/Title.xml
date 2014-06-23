@@ -13,7 +13,7 @@
             <actions>
                 <action id="0" name="Call function" sid="8513935637419227" type="Function">
                     <param id="0" name="Name">&quot;fade&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black-slow&quot;</param>
                 </action>
             </actions>
         </event-block>

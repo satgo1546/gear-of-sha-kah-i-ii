@@ -161,6 +161,18 @@
             </behaviors>
             <texture />
         </object-type>
+        <object-type name="TileBG_BlackFadeSlow" sid="3589395226973605">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="2545468823560083">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="2206378647349492">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

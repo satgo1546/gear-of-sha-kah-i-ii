@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Fade</name>
     <events>
+        <comment>fade(&quot;in&quot; | &quot;out&quot;, &quot;black[-slow]&quot; | &quot;white&quot;)</comment>
         <event-block sid="6865947676162269">
             <conditions>
                 <condition id="0" name="On function" sid="6598786738096992" type="Function">
@@ -50,6 +51,49 @@
                             </conditions>
                             <actions>
                                 <action behavior="FadeOut" id="1" name="Start fade" sid="8195768207506627" type="TileBG_BlackFade" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9324078165629383">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="7083302025338968" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;black-slow&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9218328954706619" type="System">
+                            <param id="0" name="Object to create">TileBG_BlackFadeSlow</param>
+                            <param id="1" name="Layer">&quot;Fade&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4340772164674669">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="615986870634071" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;in&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="9213653259951981" type="TileBG_BlackFadeSlow" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="3433203692834254">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="387803990025212" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;out&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="6299640787624089" type="TileBG_BlackFadeSlow" />
                             </actions>
                         </event-block>
                     </sub-events>
