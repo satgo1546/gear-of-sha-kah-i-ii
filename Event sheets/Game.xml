@@ -42,18 +42,70 @@
                 <condition id="-8" name="Is boolean instance variable set" sid="7854930694404218" type="Sprite_Text">
                     <param id="0" name="Instance variable">Button</param>
                 </condition>
-                <condition id="-7" name="Compare instance variable" sid="839006526929277" type="Sprite_Text">
-                    <param id="0" name="Instance variable">ButtonTag</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;call-menu&quot;</param>
-                </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="251686160657052" type="System">
-                    <param id="0" name="Variable">Menu</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="4885341996151536">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="839006526929277" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;call-menu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="251686160657052" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="243378068480579">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8034165121707453" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;resume&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3262117712461553" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1144780388317383">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2853507144003561" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;hint&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="1074850603535579">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2583360388691197" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;instructions&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="6561506181107701">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8838837738808872" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;title&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4786064026845997">
             <conditions>
