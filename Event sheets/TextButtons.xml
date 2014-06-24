@@ -11,6 +11,9 @@
                 <condition id="-8" name="Is boolean instance variable set" sid="6901691055348136" type="Sprite_Text">
                     <param id="0" name="Instance variable">Button</param>
                 </condition>
+                <condition id="-16" name="Is on layer" sid="6329394979549336" type="TileBG_Selection">
+                    <param id="0" name="Layer">Sprite_Text.LayerName</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="8484005510500578" type="TileBG_Selection">

@@ -32,6 +32,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6998964045645934">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8901051111713386" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite_Text</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="7854930694404218" type="Sprite_Text">
+                    <param id="0" name="Instance variable">Button</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="839006526929277" type="Sprite_Text">
+                    <param id="0" name="Instance variable">ButtonTag</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;call-menu&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="251686160657052" type="System">
+                    <param id="0" name="Variable">Menu</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="4786064026845997">
             <conditions>
                 <condition id="0" name="On key pressed" sid="5381617804050773" type="Keyboard">
