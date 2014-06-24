@@ -4,6 +4,7 @@
     <name>Game</name>
     <events>
         <include>Fade</include>
+        <include>TextButtons</include>
         <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
         <event-block sid="2105966368120164">
             <conditions>
@@ -41,6 +42,24 @@
                 <action id="-9" name="Set value" sid="6275730456452537" type="System">
                     <param id="0" name="Variable">Menu</param>
                     <param id="1" name="Value">1 - Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7034565272320792">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2815425663048676" type="Mouse">
+                    <param id="0" name="Object">Sprite_Text</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="6835273868413714" type="Sprite_Text">
+                    <param id="0" name="Instance variable">Button</param>
+                </condition>
+                <condition id="-16" name="Is on layer" sid="4550710579061561" type="Sprite_Text">
+                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="7830079187203995" type="Sprite_MenuChoice">
+                    <param id="0" name="Y">Sprite_Text.Y</param>
                 </action>
             </actions>
         </event-block>
