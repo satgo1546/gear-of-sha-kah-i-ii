@@ -79,7 +79,18 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9350243097952365" speed="0">
-                    <frame duration="1" hotspotX="0.500785" hotspotY="0.501333" />
+                    <frame duration="1" hotspotX="0.501562" hotspotY="0.501567">
+                        <collision-poly>
+                            <point x="0.15" y="0.30094" />
+                            <point x="0.5" y="0.435737" />
+                            <point x="0.715625" y="0.570533" />
+                            <point x="0.726563" y="0.498433" />
+                            <point x="0.903125" y="0.805643" />
+                            <point x="0.5" y="0.796238" />
+                            <point x="0.053125" y="0.893417" />
+                            <point x="0.01875" y="0.498433" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.501466" hotspotY="0.512821" />
                 </animation>
             </animation-folder>

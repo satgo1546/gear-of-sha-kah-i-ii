@@ -58,8 +58,21 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-15" name="Set visible" sid="2504229352167279" type="Sprite_MenuChoice">
+                    <param id="0" name="Visibility">1</param>
+                </action>
                 <action id="-2" name="Set Y" sid="7830079187203995" type="Sprite_MenuChoice">
                     <param id="0" name="Y">Sprite_Text.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9819255270915951">
+            <conditions>
+                <condition id="-22" name="Else" sid="7963196604563506" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="5752961105817611" type="Sprite_MenuChoice">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
