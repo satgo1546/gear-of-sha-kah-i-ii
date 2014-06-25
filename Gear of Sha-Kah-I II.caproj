@@ -424,7 +424,16 @@
         <global-instance type="Function" uid="11" />
     </global-instances>
     <sounds-folder expanded="1" />
-    <music-folder expanded="1" />
+    <music-folder expanded="1">
+        <file name="CaveB1.m4a" />
+        <file name="Field.m4a" />
+        <file name="Opening.m4a" />
+        <file name="Title.m4a" />
+        <file name="CaveB1.ogg" />
+        <file name="Field.ogg" />
+        <file name="Opening.ogg" />
+        <file name="Title.ogg" />
+    </music-folder>
     <files-folder expanded="1">
         <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />
