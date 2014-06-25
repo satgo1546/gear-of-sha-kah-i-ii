@@ -30,10 +30,11 @@
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">2</param>
                 </condition>
-                <condition id="-7" name="Compare instance variable" sid="998686500299911" type="Sprite_Text">
-                    <param id="0" name="Instance variable">ButtonTag</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;hint-title&quot;</param>
+                <condition id="-33" name="Pick by comparison" sid="998686500299911" type="System">
+                    <param id="0" name="Object">Sprite_Text</param>
+                    <param id="1" name="Expression">left(Sprite_Text.ButtonTag, 5)</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">&quot;hint-&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -56,13 +57,13 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Set Y" sid="4215371162600558" type="Sprite_BGs">
+                        <action id="-2" name="Set Y" sid="2916409044216492" type="Sprite_BGs">
                             <param id="0" name="Y">Sprite_BGs.Y - 1200 * dt</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="9096842012346543" type="Sprite_Text">
+                        <action id="-2" name="Set Y" sid="400404603277299" type="Sprite_Text">
                             <param id="0" name="Y">Sprite_Text.Y - 1200 * dt</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="9968426829125727" type="Sprite_Hints">
+                        <action id="-2" name="Set Y" sid="3543609795539125" type="Sprite_Hints">
                             <param id="0" name="Y">Sprite_Hints.Y - 1200 * dt</param>
                         </action>
                     </actions>
@@ -148,6 +149,21 @@
                         <action id="-9" name="Set value" sid="6038345622276498" type="System">
                             <param id="0" name="Variable">Hint</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3073433911911233">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4984300246940423" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;hint-resume&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1706566235232268" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
