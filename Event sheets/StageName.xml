@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>StageName</name>
+    <events>
+        <event-block any="1" sid="6083670606552637">
+            <conditions>
+                <condition id="-18" name="On created" sid="7541077696995108" type="SpriteFont_StageName" />
+                <condition id="0" name="On function" sid="9943458079925974" type="Function">
+                    <param id="0" name="Name">&quot;reload-spritefonts&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Load" sid="2003926725211933" type="Array_SpriteFontLoader">
+                    <param id="0" name="JSON">&quot;{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,22,1],&quot;&quot;data&quot;&quot;:[[[5],[6],[8],[9],[11],[12],[13],[15],[16],[17],[18],[19],[20],[21],[22],[23],[24],[25],[27],[28],[29],[30]],[[&quot;&quot;il.!&apos;|&quot;&quot;],[&quot;&quot;I:&quot;&quot;],[&quot;&quot;,&quot;&quot;],[&quot;&quot;;&quot;&quot;],[&quot;&quot;j[]&quot;&quot;],[&quot;&quot;1\&quot;&quot;()&quot;&quot;],[&quot;&quot;r-°&quot;&quot;],[&quot;&quot;cfstz&quot;&quot;],[&quot;&quot;EFJ&quot;&quot;],[&quot;&quot;LSaehknu235\\/&quot;&quot;],[&quot;&quot;BPZbdgopqvxy?&quot;&quot;],[&quot;&quot;CKRT7&lt;&quot;&quot;],[&quot;&quot;DHNU69&gt;&quot;&quot;],[&quot;&quot;X048=&quot;&quot;],[&quot;&quot;GY~#+&quot;&quot;],[&quot;&quot;AV&quot;&quot;],[&quot;&quot;MOm&quot;&quot;],[&quot;&quot;&amp;&quot;&quot;],[&quot;&quot;Qw&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;%&quot;&quot;],[&quot;&quot;W&quot;&quot;]]]}&quot;</param>
+                </action>
+                <action id="5" name="Set character width" sid="9744902839672011" type="SpriteFont_StageName">
+                    <param id="0" name="Character">&quot; &quot;</param>
+                    <param id="1" name="Width">8</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="9344140315702074">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="5618558773549305" type="Array_SpriteFontLoader">
+                            <param id="0" name="Axes">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="263424136480481" type="System">
+                            <param id="0" name="First value">Array_SpriteFontLoader.CurX</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set character width" sid="520040108221741" type="SpriteFont_StageName">
+                            <param id="0" name="Character">Array_SpriteFontLoader.At(1, Array_SpriteFontLoader.CurY)</param>
+                            <param id="1" name="Width">Array_SpriteFontLoader.CurValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

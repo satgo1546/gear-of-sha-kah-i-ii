@@ -6,6 +6,7 @@
         <include>Fade</include>
         <include>MovingDecorations</include>
         <include>TextButtons</include>
+        <include>StageName</include>
         <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
         <variable comment="0 = hide, 1 = show" constant="0" name="Hint" sid="5521178366453583" static="0" type="number">0</variable>
         <event-block sid="2105966368120164">
