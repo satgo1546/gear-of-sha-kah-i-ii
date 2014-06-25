@@ -401,6 +401,10 @@
         <object-type global="1" name="Array_SpriteFontLoader" sid="8871335754186141">
             <plugin id="Arr" />
         </object-type>
+        <object-type name="TileBG_Sky" sid="9474177627595648">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
