@@ -7,6 +7,7 @@
         <include>MovingDecorations</include>
         <include>TextButtons</include>
         <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
+        <variable comment="0 = hide, 1 = show" constant="0" name="Hint" sid="5521178366453583" static="0" type="number">0</variable>
         <event-block sid="2105966368120164">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2040122900933751" type="System" />
@@ -25,6 +26,15 @@
         <event-block sid="6352494227925687">
             <conditions>
                 <condition id="-1" name="Every tick" sid="4539341699269842" type="System" />
+                <condition id="3" name="Compare frame" sid="9820684897952482" type="Sprite_BGs">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="998686500299911" type="Sprite_Text">
+                    <param id="0" name="Instance variable">ButtonTag</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;hint-title&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-18" name="Set layer opacity" sid="8963002477842934" type="System">
@@ -32,6 +42,56 @@
                     <param id="1" name="Opacity">LayerOpacity(&quot;Menu&quot;) + (0.25 / dt) * (Menu - 0.5)</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="8507052801195194">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9423720255292412" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="7403073133845862" type="Sprite_BGs">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">-Sprite_BGs.Height</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="4215371162600558" type="Sprite_BGs">
+                            <param id="0" name="Y">Sprite_BGs.Y - 1200 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9096842012346543" type="Sprite_Text">
+                            <param id="0" name="Y">Sprite_Text.Y - 1200 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9968426829125727" type="Sprite_Hints">
+                            <param id="0" name="Y">Sprite_Hints.Y - 1200 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7883595014798886">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8006392738422634" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="4392280571235318" type="Sprite_BGs">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="2880526621883171" type="Sprite_BGs">
+                            <param id="0" name="Y">Sprite_BGs.Y + 1200 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="8665607732688189" type="Sprite_Text">
+                            <param id="0" name="Y">Sprite_Text.Y + 1200 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="3543595378671688" type="Sprite_Hints">
+                            <param id="0" name="Y">Sprite_Hints.Y + 1200 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="6998964045645934">
             <conditions>
@@ -84,7 +144,12 @@
                             <param id="2" name="Value">&quot;hint&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="6038345622276498" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="1074850603535579">
                     <conditions>
@@ -114,12 +179,35 @@
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="6275730456452537" type="System">
-                    <param id="0" name="Variable">Menu</param>
-                    <param id="1" name="Value">1 - Menu</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="3466164505930807">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6605209642547313" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4383529051813868" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2760774471505539">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9710049057611443" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6275730456452537" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Value">1 - Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="7034565272320792">
             <conditions>
