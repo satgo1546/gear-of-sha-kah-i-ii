@@ -89,7 +89,7 @@
                 <instance type="Sprite_Player" uid="75">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>FallR</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -121,8 +121,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>128</x>
-                        <y>128</y>
+                        <x>64</x>
+                        <y>32</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
