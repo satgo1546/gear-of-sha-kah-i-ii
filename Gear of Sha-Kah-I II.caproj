@@ -20,6 +20,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
@@ -404,6 +405,11 @@
         <object-type name="TileBG_Sky" sid="9474177627595648">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="Tilemap_Main" sid="1648597995895543">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
         </object-type>
     </object-folder>
     <families />
