@@ -303,7 +303,18 @@
                             <param id="2" name="Value">&quot;instructions&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Call function" sid="2427711398966733" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5688874776101541" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2868213018304584" type="System">
+                            <param id="0" name="Layout">Instructions</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="6561506181107701">
                     <conditions>

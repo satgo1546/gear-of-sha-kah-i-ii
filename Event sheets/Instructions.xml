@@ -38,6 +38,9 @@
                 <action id="-16" name="Wait" sid="6921986145435088" type="System">
                     <param id="0" name="Seconds">0.4</param>
                 </action>
+                <action id="-2" name="Go to layout" sid="4791228336867262" type="System">
+                    <param id="0" name="Layout">Game</param>
+                </action>
             </actions>
         </event-block>
     </events>
