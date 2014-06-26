@@ -404,5 +404,54 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="1973476299049925">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7717956466051489" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="5324303592327508" type="Sprite_Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4801118925889792">
+            <conditions>
+                <condition id="2" name="Key is down" sid="8380354511014931" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="5524537657490038" type="Sprite_Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5558818658417956">
+            <conditions>
+                <condition id="2" name="Key is down" sid="1612100171633693" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="8609603724419931" type="Sprite_Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7274173739411736">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2732826038592636" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="8271139938057792" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="12" name="Fall through" sid="9085170204413163" type="Sprite_Player" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
