@@ -158,7 +158,7 @@
                 <instance-variable name="ButtonTag" sid="8226274857943556" type="string" />
             </instance-variables>
             <animation-folder expanded="1">
-                <animation framecount="22" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
+                <animation framecount="34" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
                     <frame duration="1" hotspotX="0.501992" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.5" y="0.00531915" />
@@ -224,6 +224,18 @@
                             <point x="0.012987" y="0.482759" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.511111" />
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.511111" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -505,6 +517,10 @@
         <object-type name="Text_Area" sid="6550091970160535">
             <plugin id="Text" />
         </object-type>
+        <object-type name="9patch_Key" sid="9504311734924528">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -513,6 +529,7 @@
         <layout>Title.xml</layout>
         <layout>Dummy.xml</layout>
         <layout>Saves.xml</layout>
+        <layout>Instructions.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Logo.xml</event-sheet>
@@ -523,6 +540,7 @@
         <event-sheet>Saves.xml</event-sheet>
         <event-sheet>TextButtons.xml</event-sheet>
         <event-sheet>StageName.xml</event-sheet>
+        <event-sheet>Instructions.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
