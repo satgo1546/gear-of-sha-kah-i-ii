@@ -9,6 +9,7 @@
         <include>StageName</include>
         <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
         <variable comment="0 = hide, 1 = show" constant="0" name="Hint" sid="5521178366453583" static="0" type="number">0</variable>
+        <variable comment="0 = hide, 1 = show" constant="0" name="StageName" sid="8293518811735569" static="0" type="number">0</variable>
         <event-block sid="2105966368120164">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2040122900933751" type="System" />
@@ -37,11 +38,22 @@
                     <param id="2" name="Comparison">0</param>
                     <param id="3" name="Value">&quot;hint-&quot;</param>
                 </condition>
+                <condition id="-36" name="Pick overlapping point" sid="4000955258980936" type="System">
+                    <param id="0" name="Object">Text_Area</param>
+                    <param id="1" name="X">Sprite_Player.X</param>
+                    <param id="2" name="Y">Sprite_Player.Y</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-18" name="Set layer opacity" sid="8963002477842934" type="System">
                     <param id="0" name="Layer">&quot;Menu&quot;</param>
                     <param id="1" name="Opacity">LayerOpacity(&quot;Menu&quot;) + (0.25 / dt) * (Menu - 0.5)</param>
+                </action>
+                <action id="0" name="Set text" sid="7216719767045324" type="SpriteFont_StageNumber">
+                    <param id="0" name="Text">tokenat(Text_Area.Text, 0, &quot;: &quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="5425101041471808" type="SpriteFont_StageName">
+                    <param id="0" name="Text">tokenat(Text_Area.Text, 1, &quot;: &quot;)</param>
                 </action>
             </actions>
             <sub-events>
@@ -90,6 +102,121 @@
                         </action>
                         <action id="-2" name="Set Y" sid="3543595378671688" type="Sprite_Hints">
                             <param id="0" name="Y">Sprite_Hints.Y + 1200 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>I didn&apos;t find anything useful to pick the decoration and the black.</comment>
+        <event-block sid="6534653350896566">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8949187532903311" type="System" />
+                <condition id="-14" name="Pick by unique ID" sid="1844070632213662" type="TileBG_SystemDecorationUpper">
+                    <param id="0" name="Unique ID">67</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="9314276575613654" type="TileBG_Black">
+                    <param id="0" name="Unique ID">68</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3958638804346749" type="Sprite_Text">
+                    <param id="0" name="Instance variable">ButtonTag</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;stage#&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4889904908645909">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7021255370685323" type="System">
+                            <param id="0" name="Variable">StageName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="8367447821994577" type="TileBG_SystemDecorationUpper">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">-96</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="796540080053913" type="TileBG_SystemDecorationUpper">
+                            <param id="0" name="Y">TileBG_SystemDecorationUpper.Y - 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9927128997392443" type="TileBG_Black">
+                            <param id="0" name="Y">TileBG_Black.Y - 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="5806718265382934" type="Sprite_Text">
+                            <param id="0" name="Y">Sprite_Text.Y - 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="1526235696316779" type="SpriteFont_StageNumber">
+                            <param id="0" name="Y">SpriteFont_StageNumber.Y - 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="95115332624635" type="SpriteFont_StageName">
+                            <param id="0" name="Y">SpriteFont_StageName.Y - 500 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="462335212326567">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2015843158947163" type="System">
+                            <param id="0" name="Variable">StageName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="9234323248551186" type="TileBG_Black">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="3023521357627349" type="TileBG_SystemDecorationUpper">
+                            <param id="0" name="Y">TileBG_SystemDecorationUpper.Y + 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="1750986963080566" type="TileBG_Black">
+                            <param id="0" name="Y">TileBG_Black.Y + 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="8382351511673764" type="Sprite_Text">
+                            <param id="0" name="Y">Sprite_Text.Y + 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9868509954288521" type="SpriteFont_StageNumber">
+                            <param id="0" name="Y">SpriteFont_StageNumber.Y + 500 * dt</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="7642377811606478" type="SpriteFont_StageName">
+                            <param id="0" name="Y">SpriteFont_StageName.Y + 500 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="Move" sid="9586389518567567" static="0" type="number">0</variable>
+                <event-block sid="4039208004303395">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5285766133059349" type="System">
+                            <param id="0" name="Variable">StageName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="2210792758169542" type="TileBG_Black">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1806586838027431" type="System">
+                            <param id="0" name="Variable">Move</param>
+                            <param id="1" name="Value">TileBG_Black.Y</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="6098864740815563" type="TileBG_SystemDecorationUpper">
+                            <param id="0" name="Y">TileBG_SystemDecorationUpper.Y - Move</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="6104090631307452" type="TileBG_Black">
+                            <param id="0" name="Y">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="1590695787124945" type="Sprite_Text">
+                            <param id="0" name="Y">Sprite_Text.Y - Move</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="6997339414255068" type="SpriteFont_StageNumber">
+                            <param id="0" name="Y">SpriteFont_StageNumber.Y - Move</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9288785868558229" type="SpriteFont_StageName">
+                            <param id="0" name="Y">SpriteFont_StageName.Y - Move</param>
                         </action>
                     </actions>
                 </event-block>
@@ -254,6 +381,26 @@
             <actions>
                 <action id="-15" name="Set visible" sid="5752961105817611" type="Sprite_MenuChoice">
                     <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5850660837669417">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3102488686361552" type="Sprite_Player">
+                    <param id="0" name="Object">Text_Area</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="276550764541315" type="System">
+                    <param id="0" name="Variable">StageName</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="1734631639963997" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="7049880989788167" type="System">
+                    <param id="0" name="Variable">StageName</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>

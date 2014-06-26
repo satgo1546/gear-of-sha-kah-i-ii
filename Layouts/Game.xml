@@ -133,6 +133,60 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Text_Area" uid="76">
+                    <properties>
+                        <text>1: The very beginning</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Verdana,-35,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>576</width>
+                        <height>352</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text_Area" uid="77">
+                    <properties>
+                        <text>2: Try again</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Verdana,-35,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>608</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>576</width>
+                        <height>320</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -228,7 +282,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.670000017</opacity>
                     </world>
                 </instance>
                 <instance type="TileBG_Black" uid="68">
@@ -248,7 +302,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.670000017</opacity>
                     </world>
                 </instance>
                 <instance type="Sprite_Text" uid="69">
@@ -260,7 +314,7 @@
                     </properties>
                     <instance-variables>
                         <Button>false</Button>
-                        <ButtonTag></ButtonTag>
+                        <ButtonTag>stage#</ButtonTag>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -326,7 +380,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>312</x>
-                        <y>-80</y>
+                        <y>-74</y>
                         <z>0</z>
                         <width>328</width>
                         <height>48</height>
