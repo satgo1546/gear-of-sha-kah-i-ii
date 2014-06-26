@@ -27,9 +27,12 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -408,8 +411,35 @@
         </object-type>
         <object-type name="Tilemap_Main" sid="1648597995895543">
             <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2943927598094066">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture />
             <tiles />
+        </object-type>
+        <object-type name="Sprite_Player" sid="3445957072919698">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="7917174186453725">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="3907064934588421">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="6064228879203029">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="4921366822382275">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6205199833593681" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
