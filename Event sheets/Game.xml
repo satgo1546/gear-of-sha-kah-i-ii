@@ -70,10 +70,8 @@
                     <param id="2" name="Comparison">0</param>
                     <param id="3" name="Value">&quot;hint-&quot;</param>
                 </condition>
-                <condition id="-36" name="Pick overlapping point" sid="4000955258980936" type="System">
+                <condition id="1" name="Is overlapping another object" sid="5648287351469064" type="Sprite_Player">
                     <param id="0" name="Object">Text_Area</param>
-                    <param id="1" name="X">Sprite_Player.X</param>
-                    <param id="2" name="Y">Sprite_Player.Y</param>
                 </condition>
             </conditions>
             <actions>
