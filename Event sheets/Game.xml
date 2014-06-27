@@ -258,6 +258,10 @@
                 <condition id="-16" name="Is on layer" sid="4550710579061561" type="Sprite_Text">
                     <param id="0" name="Layer">&quot;Menu&quot;</param>
                 </condition>
+                <condition id="-10" name="Compare opacity" sid="3813347032926635" type="Sprite_Text">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">50</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="2504229352167279" type="Sprite_MenuChoice">

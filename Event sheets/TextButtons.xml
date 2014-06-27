@@ -14,6 +14,11 @@
                 <condition id="-16" name="Is on layer" sid="6329394979549336" type="TileBG_Selection">
                     <param id="0" name="Layer">Sprite_Text.LayerName</param>
                 </condition>
+                <condition id="-10" name="Compare opacity" sid="9281198437630929" type="Sprite_Text">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">50</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="5142637148734146" type="Sprite_Text" />
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="8484005510500578" type="TileBG_Selection">
