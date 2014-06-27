@@ -24,6 +24,150 @@
                     <param id="1" name="Opacity">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <variable constant="0" name="Tile" sid="9095873080814363" static="0" type="number">0</variable>
+                <comment>If the tile is ...</comment>
+                <event-block sid="9863702040335516">
+                    <conditions>
+                        <condition id="-10" name="For" sid="5055956347036591" type="System">
+                            <param id="0" name="Name">&quot;tile-x&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">floor(Tilemap_Main.Width / 32)</param>
+                        </condition>
+                        <condition id="-10" name="For" sid="4921920542235017" type="System">
+                            <param id="0" name="Name">&quot;tile-y&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">floor(Tilemap_Main.Height / 32)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3761837638686297" type="System">
+                            <param id="0" name="Variable">Tile</param>
+                            <param id="1" name="Value">Tilemap_Main.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>... a grass block ...</comment>
+                        <event-block sid="8323531339996059">
+                            <conditions>
+                                <condition id="-21" name="Is between values" sid="2933895719416718" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">0</param>
+                                    <param id="2" name="Upper bound">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set tile" sid="8976706044341316" type="Tilemap_Main">
+                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                                    <param id="2" name="Tile">random(0, 7)</param>
+                                    <param id="3" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>... a dirt block ...</comment>
+                        <event-block sid="5390533096513905">
+                            <conditions>
+                                <condition id="-21" name="Is between values" sid="2370317834858265" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">8</param>
+                                    <param id="2" name="Upper bound">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set tile" sid="3014851206948746" type="Tilemap_Main">
+                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                                    <param id="2" name="Tile">random(8, 15)</param>
+                                    <param id="3" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>... a switchable block ...</comment>
+                        <event-block sid="7975884676814386">
+                            <conditions>
+                                <condition id="-21" name="Is between values" sid="3971983172938651" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">18</param>
+                                    <param id="2" name="Upper bound">21</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set tile" sid="9437535797227787" type="Tilemap_Main">
+                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                                    <param id="2" name="Tile">random(18, 21)</param>
+                                    <param id="3" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>... a pushable block ...</comment>
+                        <event-block any="1" sid="44578685455176">
+                            <conditions>
+                                <condition id="-21" name="Is between values" sid="1771626886421852" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">22</param>
+                                    <param id="2" name="Upper bound">23</param>
+                                </condition>
+                                <condition id="-21" name="Is between values" sid="955362064101698" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">30</param>
+                                    <param id="2" name="Upper bound">31</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set tile" sid="8710774859434919" type="Tilemap_Main">
+                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                                    <param id="2" name="Tile">random(2) = 1 ? random(22, 23) : random(30, 31)</param>
+                                    <param id="3" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>... a destroyable block ...</comment>
+                        <event-block any="1" sid="5139078674772007">
+                            <conditions>
+                                <condition id="-21" name="Is between values" sid="5765603776727182" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">24</param>
+                                    <param id="2" name="Upper bound">25</param>
+                                </condition>
+                                <condition id="-21" name="Is between values" sid="1015662981546163" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">32</param>
+                                    <param id="2" name="Upper bound">33</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set tile" sid="5657695412868311" type="Tilemap_Main">
+                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                                    <param id="2" name="Tile">random(2) = 1 ? random(24, 25) : random(32, 33)</param>
+                                    <param id="3" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>... a key block ...</comment>
+                        <event-block sid="7269312292553877">
+                            <conditions>
+                                <condition id="-21" name="Is between values" sid="4759519186841756" type="System">
+                                    <param id="0" name="Value">Tile</param>
+                                    <param id="1" name="Lower bound">26</param>
+                                    <param id="2" name="Upper bound">29</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set tile" sid="6065867227117139" type="Tilemap_Main">
+                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                                    <param id="2" name="Tile">random(26, 29)</param>
+                                    <param id="3" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="6352494227925687">
             <conditions>
