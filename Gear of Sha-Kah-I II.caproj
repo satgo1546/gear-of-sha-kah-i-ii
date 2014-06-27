@@ -401,6 +401,14 @@
         </object-type>
         <object-type name="Sprite_Hints" sid="6205555962920835">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="2444408305540044">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="6055374760233488">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1491839307841174" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />

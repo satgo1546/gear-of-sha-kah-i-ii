@@ -86,57 +86,13 @@
                 <action id="0" name="Set text" sid="5425101041471808" type="SpriteFont_StageName">
                     <param id="0" name="Text">tokenat(Text_Area.Text, 1, &quot;: &quot;)</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="758508649786135" type="Sprite_Text">
+                    <param id="0" name="Opacity">Sprite_Hints.Opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8523517719213454" type="Sprite_BGs">
+                    <param id="0" name="Opacity">Sprite_Hints.Opacity * 0.75</param>
+                </action>
             </actions>
-            <sub-events>
-                <event-block sid="8507052801195194">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="9423720255292412" type="System">
-                            <param id="0" name="Variable">Hint</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="7403073133845862" type="Sprite_BGs">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">-Sprite_BGs.Height</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Set Y" sid="2916409044216492" type="Sprite_BGs">
-                            <param id="0" name="Y">Sprite_BGs.Y - 1200 * dt</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="400404603277299" type="Sprite_Text">
-                            <param id="0" name="Y">Sprite_Text.Y - 1200 * dt</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="3543609795539125" type="Sprite_Hints">
-                            <param id="0" name="Y">Sprite_Hints.Y - 1200 * dt</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7883595014798886">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="8006392738422634" type="System">
-                            <param id="0" name="Variable">Hint</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-2" name="Compare Y" sid="4392280571235318" type="Sprite_BGs">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Set Y" sid="2880526621883171" type="Sprite_BGs">
-                            <param id="0" name="Y">Sprite_BGs.Y + 1200 * dt</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="8665607732688189" type="Sprite_Text">
-                            <param id="0" name="Y">Sprite_Text.Y + 1200 * dt</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="3543595378671688" type="Sprite_Hints">
-                            <param id="0" name="Y">Sprite_Hints.Y + 1200 * dt</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <comment>I didn&apos;t find anything useful to pick the decoration and the black.</comment>
         <event-block sid="6534653350896566">

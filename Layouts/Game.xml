@@ -805,7 +805,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>-480</y>
+                        <y>0</y>
                         <z>0</z>
                         <width>640</width>
                         <height>480</height>
@@ -871,7 +871,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
-                        <y>-384</y>
+                        <y>96</y>
                         <z>0</z>
                         <width>268</width>
                         <height>108</height>
@@ -889,11 +889,31 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0.2</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeOut">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.2</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>320</x>
-                        <y>-160</y>
+                        <y>320</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
@@ -901,7 +921,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="Sprite_Text" uid="66">
@@ -919,7 +939,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>512</x>
-                        <y>-384</y>
+                        <y>96</y>
                         <z>0</z>
                         <width>206</width>
                         <height>54</height>
