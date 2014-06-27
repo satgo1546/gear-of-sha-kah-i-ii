@@ -11,6 +11,7 @@
         <variable comment="0 = hide, 1 = show" constant="0" name="Hint" sid="5521178366453583" static="0" type="number">0</variable>
         <variable comment="0 = hide, 1 = show" constant="0" name="StageName" sid="8293518811735569" static="0" type="number">0</variable>
         <variable comment="-1 = L, 1 = R" constant="0" name="PlayerFace" sid="7591721555997269" static="0" type="number">1</variable>
+        <variable constant="0" name="Gears" sid="1514336597809996" static="0" type="number">0</variable>
         <event-block sid="2105966368120164">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2040122900933751" type="System" />
@@ -85,6 +86,9 @@
                 </action>
                 <action id="0" name="Set text" sid="5425101041471808" type="SpriteFont_StageName">
                     <param id="0" name="Text">tokenat(Text_Area.Text, 1, &quot;: &quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="2149808019415298" type="SpriteFont_GearCount">
+                    <param id="0" name="Text">str(Gears)</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="758508649786135" type="Sprite_Text">
                     <param id="0" name="Opacity">Sprite_Hints.Opacity</param>
