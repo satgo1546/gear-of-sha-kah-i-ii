@@ -26,8 +26,6 @@
                 </action>
             </actions>
             <sub-events>
-                <variable constant="0" name="Tile" sid="9095873080814363" static="0" type="number">0</variable>
-                <comment>If the tile is ...</comment>
                 <event-block sid="9863702040335516">
                     <conditions>
                         <condition id="-10" name="For" sid="5055956347036591" type="System">
@@ -40,133 +38,21 @@
                             <param id="1" name="Start index">0</param>
                             <param id="2" name="End index">floor(Tilemap_Main.Height / 32)</param>
                         </condition>
+                        <condition id="0" name="Compare tile at" sid="8919917622710335" type="Tilemap_Main">
+                            <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                            <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                            <param id="2" name="Comparison">5</param>
+                            <param id="3" name="Tile">8</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="3761837638686297" type="System">
-                            <param id="0" name="Variable">Tile</param>
-                            <param id="1" name="Value">Tilemap_Main.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;))</param>
+                        <action id="1" name="Set tile" sid="8976706044341316" type="Tilemap_Main">
+                            <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
+                            <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
+                            <param id="2" name="Tile">random(floor(Tilemap_Main.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;)) / 8) * 8, floor(Tilemap_Main.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;)) / 8) * 8 + 7)</param>
+                            <param id="3" name="State">0</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <comment>... a grass block ...</comment>
-                        <event-block sid="8323531339996059">
-                            <conditions>
-                                <condition id="-21" name="Is between values" sid="2933895719416718" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">0</param>
-                                    <param id="2" name="Upper bound">7</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Set tile" sid="8976706044341316" type="Tilemap_Main">
-                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
-                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
-                                    <param id="2" name="Tile">random(0, 7)</param>
-                                    <param id="3" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>... a dirt block ...</comment>
-                        <event-block sid="5390533096513905">
-                            <conditions>
-                                <condition id="-21" name="Is between values" sid="2370317834858265" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">8</param>
-                                    <param id="2" name="Upper bound">15</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Set tile" sid="3014851206948746" type="Tilemap_Main">
-                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
-                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
-                                    <param id="2" name="Tile">random(8, 15)</param>
-                                    <param id="3" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>... a switchable block ...</comment>
-                        <event-block sid="7975884676814386">
-                            <conditions>
-                                <condition id="-21" name="Is between values" sid="3971983172938651" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">18</param>
-                                    <param id="2" name="Upper bound">21</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Set tile" sid="9437535797227787" type="Tilemap_Main">
-                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
-                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
-                                    <param id="2" name="Tile">random(18, 21)</param>
-                                    <param id="3" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>... a pushable block ...</comment>
-                        <event-block any="1" sid="44578685455176">
-                            <conditions>
-                                <condition id="-21" name="Is between values" sid="1771626886421852" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">22</param>
-                                    <param id="2" name="Upper bound">23</param>
-                                </condition>
-                                <condition id="-21" name="Is between values" sid="955362064101698" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">30</param>
-                                    <param id="2" name="Upper bound">31</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Set tile" sid="8710774859434919" type="Tilemap_Main">
-                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
-                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
-                                    <param id="2" name="Tile">random(2) = 1 ? random(22, 23) : random(30, 31)</param>
-                                    <param id="3" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>... a destroyable block ...</comment>
-                        <event-block any="1" sid="5139078674772007">
-                            <conditions>
-                                <condition id="-21" name="Is between values" sid="5765603776727182" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">24</param>
-                                    <param id="2" name="Upper bound">25</param>
-                                </condition>
-                                <condition id="-21" name="Is between values" sid="1015662981546163" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">32</param>
-                                    <param id="2" name="Upper bound">33</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Set tile" sid="5657695412868311" type="Tilemap_Main">
-                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
-                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
-                                    <param id="2" name="Tile">random(2) = 1 ? random(24, 25) : random(32, 33)</param>
-                                    <param id="3" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>... a key block ...</comment>
-                        <event-block sid="7269312292553877">
-                            <conditions>
-                                <condition id="-21" name="Is between values" sid="4759519186841756" type="System">
-                                    <param id="0" name="Value">Tile</param>
-                                    <param id="1" name="Lower bound">26</param>
-                                    <param id="2" name="Upper bound">29</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Set tile" sid="6065867227117139" type="Tilemap_Main">
-                                    <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
-                                    <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
-                                    <param id="2" name="Tile">random(26, 29)</param>
-                                    <param id="3" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -367,177 +253,41 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="6998964045645934">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="8901051111713386" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite_Text</param>
-                </condition>
-                <condition id="-8" name="Is boolean instance variable set" sid="7854930694404218" type="Sprite_Text">
-                    <param id="0" name="Instance variable">Button</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="4885341996151536">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="839006526929277" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;call-menu&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="251686160657052" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="243378068480579">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="8034165121707453" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;resume&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="2972066938199903" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="3262117712461553" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1144780388317383">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="2853507144003561" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;hint&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="2036144077573851" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="6038345622276498" type="System">
-                            <param id="0" name="Variable">Hint</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1074850603535579">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="2583360388691197" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;instructions&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="7422321682080376" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="2427711398966733" type="Function">
-                            <param id="0" name="Name">&quot;fade&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="5688874776101541" type="System">
-                            <param id="0" name="Seconds">0.4</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="2868213018304584" type="System">
-                            <param id="0" name="Layout">Instructions</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6561506181107701">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="8838837738808872" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;title&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="8988251018206724" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
-                <event-block sid="3073433911911233">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="4984300246940423" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;hint-resume&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="80133396374974" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="6302581704933762" type="System">
-                            <param id="0" name="Variable">Hint</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="1706566235232268" type="System">
-                            <param id="0" name="Variable">Hint</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="4786064026845997">
             <conditions>
                 <condition id="0" name="On key pressed" sid="5381617804050773" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="6605209642547313" type="System">
+                    <param id="0" name="Variable">Hint</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="3466164505930807">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="6605209642547313" type="System">
-                            <param id="0" name="Variable">Hint</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="4383529051813868" type="System">
-                            <param id="0" name="Variable">Hint</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2760774471505539">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="9710049057611443" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="6275730456452537" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Value">1 - Menu</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action id="-9" name="Set value" sid="4383529051813868" type="System">
+                    <param id="0" name="Variable">Hint</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2760774471505539">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9488556330816395" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5017864416639148" type="System">
+                    <param id="0" name="Variable">Hint</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6275730456452537" type="System">
+                    <param id="0" name="Variable">Menu</param>
+                    <param id="1" name="Value">1 - Menu</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="7034565272320792">
             <conditions>
@@ -713,6 +463,28 @@
                 <action id="4" name="Set animation" sid="7673235053487693" type="Sprite_Player">
                     <param id="0" name="Animation">&quot;Walk&quot; &amp; (PlayerFace &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="391604620585458">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="9234511637655801" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_PushableBlock</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="8" name="Set vector X" sid="8013830757398184" type="Sprite_PushableBlock">
+                    <param id="0" name="Vector X">Sprite_Player.Platform.VectorX</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3342441842152876">
+            <conditions>
+                <condition id="-22" name="Else" sid="7045049269733061" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="8" name="Set vector X" sid="4755784801842784" type="Sprite_PushableBlock">
+                    <param id="0" name="Vector X">0</param>
                 </action>
             </actions>
         </event-block>

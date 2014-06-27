@@ -39,5 +39,208 @@
                 </action>
             </actions>
         </event-block>
+        <comment>All click events should be registered here, not in other event sheets, to avoid too much events.</comment>
+        <event-block sid="6819947938971899">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3414869160132437" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite_Text</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="4930338063295371" type="Sprite_Text">
+                    <param id="0" name="Instance variable">Button</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>↓ Title</comment>
+                <event-block sid="3140047543926751">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4351341677572036" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;new-game&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="1387907426736486" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1481849578710914" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7811504819374479" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8469820199647128">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6072512437668568" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;load-data&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="7595863940470295" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1479285138013467" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="78601965767976" type="System">
+                            <param id="0" name="Layout">Saves</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>↓ Game</comment>
+                <event-block sid="7346176728994978">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4012487627987849" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;call-menu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5742435763528361" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1743213006249939">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4732009520606494" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;resume&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="2970357419667993" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="9094582739543168" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4398253696290312">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9513925742295249" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;hint&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="878589465006652" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1934676409787527" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4034837932417155">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="763199354057097" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;instructions&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5507640358135152" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="5814888356972229" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9324473127344944" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3748331197392776" type="System">
+                            <param id="0" name="Layout">Instructions</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="265388545251032">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="468176698992418" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;title&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3253907010066798" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="2028685171099451">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9711172420779677" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;hint-resume&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3009834487648545" type="System">
+                            <param id="0" name="Variable">Menu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7666757544800185" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3284214061209878" type="System">
+                            <param id="0" name="Variable">Hint</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>↓ Instructions</comment>
+                <event-block sid="6911906107204371">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4967763689689015" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;continue&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="4257288819898096" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5493680056942734" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3199287043907824" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

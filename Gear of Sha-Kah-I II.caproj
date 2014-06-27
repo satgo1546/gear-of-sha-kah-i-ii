@@ -743,6 +743,22 @@
             <plugin id="NinePatch" />
             <texture />
         </object-type>
+        <object-type name="Sprite_PushableBlock" sid="4081480020955904">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="1709851306278974">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6240562171385151" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

@@ -17,31 +17,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9081645325808735">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="1575475664353677" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite_Text</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="6853584419928907" type="Sprite_Text">
-                    <param id="0" name="Instance variable">ButtonTag</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;continue&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="9428497896836676" type="Function">
-                    <param id="0" name="Name">&quot;fade&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="6921986145435088" type="System">
-                    <param id="0" name="Seconds">0.4</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="4791228336867262" type="System">
-                    <param id="0" name="Layout">Game</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
