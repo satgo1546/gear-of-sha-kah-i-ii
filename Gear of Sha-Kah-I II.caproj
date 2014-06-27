@@ -870,6 +870,7 @@
         <layout>Dummy.xml</layout>
         <layout>Saves.xml</layout>
         <layout>Instructions.xml</layout>
+        <layout>Opening.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Logo.xml</event-sheet>
@@ -881,6 +882,7 @@
         <event-sheet>TextButtons.xml</event-sheet>
         <event-sheet>StageName.xml</event-sheet>
         <event-sheet>Instructions.xml</event-sheet>
+        <event-sheet>Opening.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
