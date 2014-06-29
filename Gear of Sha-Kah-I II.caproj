@@ -127,30 +127,6 @@
         <object-type name="Function" sid="3271979828499938">
             <plugin id="Function" />
         </object-type>
-        <object-type name="TileBG_BlackFade" sid="428002502060984">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="FadeIn" sid="1658401526702733">
-                    <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="FadeOut" sid="6827829408732834">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-        </object-type>
-        <object-type name="TileBG_WhiteFade" sid="6974706945353259">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="FadeIn" sid="5821054951212077">
-                    <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="FadeOut" sid="5668159841466229">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-        </object-type>
         <object-type name="Sprite_Text" sid="474806429150648">
             <plugin id="Sprite" />
             <instance-variables>
@@ -251,18 +227,6 @@
             <behaviors>
                 <behavior-type name="Sine" sid="3601795444240078">
                     <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-        </object-type>
-        <object-type name="TileBG_BlackFadeSlow" sid="3589395226973605">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="FadeIn" sid="2545468823560083">
-                    <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="FadeOut" sid="2206378647349492">
-                    <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
             <texture />
@@ -858,6 +822,29 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite_Fade" sid="6096853681872618">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="FadeIn" sid="75367037054351">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOut" sid="4752565126739829">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeInSlow" sid="8185505411121461">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="FadeOutSlow" sid="110440916757431">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7698157356535457" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
         </object-type>

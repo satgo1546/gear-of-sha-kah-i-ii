@@ -10,148 +10,89 @@
                     <param id="0" name="Name">&quot;fade&quot;</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-3" name="Create object" sid="3779555926785811" type="System">
+                    <param id="0" name="Object to create">Sprite_Fade</param>
+                    <param id="1" name="Layer">&quot;Fade&quot;</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="2466654913311717" type="Sprite_Fade">
+                    <param id="0" name="Frame number">left(Function.Param(1), 5) = &quot;black&quot; ? 0 : 1</param>
+                </action>
+                <action id="-7" name="Set size" sid="6436459091814297" type="Sprite_Fade">
+                    <param id="0" name="Width">LayoutWidth</param>
+                    <param id="1" name="Height">LayoutHeight</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block sid="4092976421204885">
+                <event-block sid="955830168295209">
                     <conditions>
-                        <condition id="1" name="Compare parameter" sid="9902762403846343" type="Function">
-                            <param id="0" name="Index">1</param>
+                        <condition id="1" name="Compare parameter" sid="1529475413849344" type="Function">
+                            <param id="0" name="Index">0</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;black&quot;</param>
+                            <param id="2" name="Value">&quot;in&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="8270337409846979" type="System">
+                            <param id="0" name="First value">right(Function.Param(1), 4)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;slow&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="3779555926785811" type="System">
-                            <param id="0" name="Object to create">TileBG_BlackFade</param>
-                            <param id="1" name="Layer">&quot;Fade&quot;</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="6436459091814297" type="TileBG_BlackFade">
-                            <param id="0" name="Width">LayoutWidth</param>
-                            <param id="1" name="Height">LayoutHeight</param>
-                        </action>
+                        <action behavior="FadeIn" id="1" name="Start fade" sid="7087001823188008" type="Sprite_Fade" />
                     </actions>
-                    <sub-events>
-                        <event-block sid="955830168295209">
-                            <conditions>
-                                <condition id="1" name="Compare parameter" sid="1529475413849344" type="Function">
-                                    <param id="0" name="Index">0</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;in&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="FadeIn" id="1" name="Start fade" sid="5907965013799578" type="TileBG_BlackFade" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="2928837867281153">
-                            <conditions>
-                                <condition id="1" name="Compare parameter" sid="287965728357712" type="Function">
-                                    <param id="0" name="Index">0</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;out&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="FadeOut" id="1" name="Start fade" sid="8195768207506627" type="TileBG_BlackFade" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
-                <event-block sid="9324078165629383">
+                <event-block sid="2928837867281153">
                     <conditions>
-                        <condition id="1" name="Compare parameter" sid="7083302025338968" type="Function">
-                            <param id="0" name="Index">1</param>
+                        <condition id="1" name="Compare parameter" sid="287965728357712" type="Function">
+                            <param id="0" name="Index">0</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;black-slow&quot;</param>
+                            <param id="2" name="Value">&quot;out&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="4001098219983916" type="System">
+                            <param id="0" name="First value">right(Function.Param(1), 4)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;slow&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="9218328954706619" type="System">
-                            <param id="0" name="Object to create">TileBG_BlackFadeSlow</param>
-                            <param id="1" name="Layer">&quot;Fade&quot;</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="4784398759464726" type="TileBG_BlackFadeSlow">
-                            <param id="0" name="Width">LayoutWidth</param>
-                            <param id="1" name="Height">LayoutHeight</param>
-                        </action>
+                        <action behavior="FadeOut" id="1" name="Start fade" sid="4651201499907613" type="Sprite_Fade" />
                     </actions>
-                    <sub-events>
-                        <event-block sid="4340772164674669">
-                            <conditions>
-                                <condition id="1" name="Compare parameter" sid="615986870634071" type="Function">
-                                    <param id="0" name="Index">0</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;in&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="FadeIn" id="1" name="Start fade" sid="9213653259951981" type="TileBG_BlackFadeSlow" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="3433203692834254">
-                            <conditions>
-                                <condition id="1" name="Compare parameter" sid="387803990025212" type="Function">
-                                    <param id="0" name="Index">0</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;out&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="FadeOut" id="1" name="Start fade" sid="6299640787624089" type="TileBG_BlackFadeSlow" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
-                <event-block sid="4357824373364971">
+                <event-block sid="7981801845768924">
                     <conditions>
-                        <condition id="1" name="Compare parameter" sid="959671245582114" type="Function">
-                            <param id="0" name="Index">1</param>
+                        <condition id="1" name="Compare parameter" sid="8978084267082249" type="Function">
+                            <param id="0" name="Index">0</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;white&quot;</param>
+                            <param id="2" name="Value">&quot;in&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="9759630139103732" type="System">
+                            <param id="0" name="First value">right(Function.Param(1), 4)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;slow&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="7767813240713667" type="System">
-                            <param id="0" name="Object to create">TileBG_WhiteFade</param>
-                            <param id="1" name="Layer">&quot;Fade&quot;</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="5455135181758406" type="TileBG_WhiteFade">
-                            <param id="0" name="Width">LayoutWidth</param>
-                            <param id="1" name="Height">LayoutHeight</param>
-                        </action>
+                        <action behavior="FadeInSlow" id="1" name="Start fade" sid="3506864086758793" type="Sprite_Fade" />
                     </actions>
-                    <sub-events>
-                        <event-block sid="593598833169777">
-                            <conditions>
-                                <condition id="1" name="Compare parameter" sid="4905222368479642" type="Function">
-                                    <param id="0" name="Index">0</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;in&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="FadeIn" id="1" name="Start fade" sid="2841189819725284" type="TileBG_WhiteFade" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="9448224356895294">
-                            <conditions>
-                                <condition id="1" name="Compare parameter" sid="6843659802363264" type="Function">
-                                    <param id="0" name="Index">0</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;out&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="FadeOut" id="1" name="Start fade" sid="2782936457630132" type="TileBG_WhiteFade" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                </event-block>
+                <event-block sid="3608503033066536">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="5272345369297735" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;out&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="853035194150177" type="System">
+                            <param id="0" name="First value">right(Function.Param(1), 4)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;slow&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="FadeOutSlow" id="1" name="Start fade" sid="2265362586077916" type="Sprite_Fade" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
