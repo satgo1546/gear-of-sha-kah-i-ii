@@ -779,7 +779,7 @@
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Pressing" pingpong="0" repeatcount="1" repeatto="0" sid="522857963068803" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
                         <collision-poly>
                             <point x="0.25" y="0.40625" />
                             <point x="0.75" y="0.40625" />
@@ -789,7 +789,7 @@
                             <point x="0.125" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
                         <collision-poly>
                             <point x="0.25" y="0.40625" />
                             <point x="0.75" y="0.40625" />
