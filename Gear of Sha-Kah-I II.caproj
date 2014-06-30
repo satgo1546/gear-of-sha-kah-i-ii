@@ -416,6 +416,9 @@
         </object-type>
         <object-type name="Sprite_Player" sid="3445957072919698">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="-1 = L, 1 = R" name="Face" sid="2339060658425522" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="7917174186453725">
                     <behavior id="Platform" />

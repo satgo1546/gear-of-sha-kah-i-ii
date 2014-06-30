@@ -10,7 +10,6 @@
         <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
         <variable comment="0 = hide, 1 = show" constant="0" name="Hint" sid="5521178366453583" static="0" type="number">0</variable>
         <variable comment="0 = hide, 1 = show" constant="0" name="StageName" sid="8293518811735569" static="0" type="number">0</variable>
-        <variable comment="-1 = L, 1 = R" constant="0" name="PlayerFace" sid="7591721555997269" static="0" type="number">1</variable>
         <variable constant="0" name="Gears" sid="1514336597809996" static="0" type="number">0</variable>
         <event-block sid="2105966368120164">
             <conditions>
@@ -363,8 +362,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="957005348401465" type="System">
-                    <param id="0" name="Variable">PlayerFace</param>
+                <action id="-10" name="Set value" sid="5433873309702126" type="Sprite_Player">
+                    <param id="0" name="Instance variable">Face</param>
                     <param id="1" name="Value">-1</param>
                 </action>
             </actions>
@@ -379,8 +378,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="2962513191280334" type="System">
-                    <param id="0" name="Variable">PlayerFace</param>
+                <action id="-10" name="Set value" sid="5787556167910512" type="Sprite_Player">
+                    <param id="0" name="Instance variable">Face</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -391,7 +390,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3955626022657866" type="Sprite_Player">
-                    <param id="0" name="Animation">&quot;Fall&quot; &amp; (PlayerFace &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
+                    <param id="0" name="Animation">&quot;Fall&quot; &amp; (Self.Face &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -403,7 +402,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="67893705209946" type="Sprite_Player">
-                    <param id="0" name="Animation">&quot;Standby&quot; &amp; (PlayerFace &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
+                    <param id="0" name="Animation">&quot;Standby&quot; &amp; (Self.Face &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -414,7 +413,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2441693401736686" type="Sprite_Player">
-                    <param id="0" name="Animation">&quot;Jump&quot; &amp; (PlayerFace &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
+                    <param id="0" name="Animation">&quot;Jump&quot; &amp; (Self.Face &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -425,7 +424,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7673235053487693" type="Sprite_Player">
-                    <param id="0" name="Animation">&quot;Walk&quot; &amp; (PlayerFace &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
+                    <param id="0" name="Animation">&quot;Walk&quot; &amp; (Self.Face &lt; 0 ? &quot;L&quot; : &quot;R&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
