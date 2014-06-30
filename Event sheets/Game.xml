@@ -50,7 +50,7 @@
                         <action id="1" name="Set tile" sid="8976706044341316" type="Tilemap_Main">
                             <param id="0" name="Tile X">loopindex(&quot;tile-x&quot;)</param>
                             <param id="1" name="Tile Y">loopindex(&quot;tile-y&quot;)</param>
-                            <param id="2" name="Tile">random(floor(Tilemap_Main.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;)) / 8) * 8, floor(Tilemap_Main.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;)) / 8) * 8 + 7)</param>
+                            <param id="2" name="Tile">random(floor(Self.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;)) / 8) * 8, floor(Self.TileAt(loopindex(&quot;tile-x&quot;), loopindex(&quot;tile-y&quot;)) / 8) * 8 + 7)</param>
                             <param id="3" name="State">0</param>
                         </action>
                     </actions>
@@ -88,7 +88,7 @@
                     <param id="0" name="Text">tokenat(Text_Area.Text, 1, &quot;: &quot;)</param>
                 </action>
                 <action id="0" name="Set text" sid="2149808019415298" type="SpriteFont_GearCount">
-                    <param id="0" name="Text">str(Sprite_Slime.Face + 10)</param>
+                    <param id="0" name="Text">str(Gears)</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="758508649786135" type="Sprite_Text">
                     <param id="0" name="Opacity">Sprite_Hints.Opacity</param>
@@ -130,19 +130,19 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="796540080053913" type="TileBG_SystemDecorationUpper">
-                            <param id="0" name="Y">TileBG_SystemDecorationUpper.Y - 500 * dt</param>
+                            <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="9927128997392443" type="TileBG_Black">
-                            <param id="0" name="Y">TileBG_Black.Y - 500 * dt</param>
+                            <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="5806718265382934" type="Sprite_Text">
-                            <param id="0" name="Y">Sprite_Text.Y - 500 * dt</param>
+                            <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="1526235696316779" type="SpriteFont_StageNumber">
-                            <param id="0" name="Y">SpriteFont_StageNumber.Y - 500 * dt</param>
+                            <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="95115332624635" type="SpriteFont_StageName">
-                            <param id="0" name="Y">SpriteFont_StageName.Y - 500 * dt</param>
+                            <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
                     </actions>
                 </event-block>
@@ -160,19 +160,19 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="3023521357627349" type="TileBG_SystemDecorationUpper">
-                            <param id="0" name="Y">TileBG_SystemDecorationUpper.Y + 500 * dt</param>
+                            <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="1750986963080566" type="TileBG_Black">
-                            <param id="0" name="Y">TileBG_Black.Y + 500 * dt</param>
+                            <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="8382351511673764" type="Sprite_Text">
-                            <param id="0" name="Y">Sprite_Text.Y + 500 * dt</param>
+                            <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="9868509954288521" type="SpriteFont_StageNumber">
-                            <param id="0" name="Y">SpriteFont_StageNumber.Y + 500 * dt</param>
+                            <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="7642377811606478" type="SpriteFont_StageName">
-                            <param id="0" name="Y">SpriteFont_StageName.Y + 500 * dt</param>
+                            <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
                     </actions>
                 </event-block>
@@ -195,19 +195,19 @@
                             <param id="1" name="Value">TileBG_Black.Y</param>
                         </action>
                         <action id="-2" name="Set Y" sid="6098864740815563" type="TileBG_SystemDecorationUpper">
-                            <param id="0" name="Y">TileBG_SystemDecorationUpper.Y - Move</param>
+                            <param id="0" name="Y">Self.Y - Move</param>
                         </action>
                         <action id="-2" name="Set Y" sid="6104090631307452" type="TileBG_Black">
                             <param id="0" name="Y">0</param>
                         </action>
                         <action id="-2" name="Set Y" sid="1590695787124945" type="Sprite_Text">
-                            <param id="0" name="Y">Sprite_Text.Y - Move</param>
+                            <param id="0" name="Y">Self.Y - Move</param>
                         </action>
                         <action id="-2" name="Set Y" sid="6997339414255068" type="SpriteFont_StageNumber">
-                            <param id="0" name="Y">SpriteFont_StageNumber.Y - Move</param>
+                            <param id="0" name="Y">Self.Y - Move</param>
                         </action>
                         <action id="-2" name="Set Y" sid="9288785868558229" type="SpriteFont_StageName">
-                            <param id="0" name="Y">SpriteFont_StageName.Y - Move</param>
+                            <param id="0" name="Y">Self.Y - Move</param>
                         </action>
                     </actions>
                 </event-block>
@@ -674,7 +674,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6988072288624082" type="Sprite_Slime">
-                    <param id="0" name="Animation">&quot;Vanish&quot; &amp; (Sprite_Slime.Face = -1 ? &quot;L&quot; : &quot;R&quot;)</param>
+                    <param id="0" name="Animation">&quot;Vanish&quot; &amp; (Self.Face = -1 ? &quot;L&quot; : &quot;R&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="5676697821040908" type="System">
