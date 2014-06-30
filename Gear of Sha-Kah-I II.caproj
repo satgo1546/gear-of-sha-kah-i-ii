@@ -31,6 +31,7 @@
         <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -755,6 +756,11 @@
             <instance-variables>
                 <instance-variable comment="The identifier of the target block." name="Target" sid="6972890034139599" type="string" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer" sid="7655575683015159">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5917225332850963" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="1">

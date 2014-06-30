@@ -297,6 +297,9 @@
                     <instance-variables>
                         <Target>temp</Target>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

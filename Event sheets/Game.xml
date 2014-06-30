@@ -488,9 +488,20 @@
                 <action behavior="Solid" id="0" name="Set enabled" sid="4692753795157536" type="Sprite_SwitchableDirt">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="-16" name="Wait" sid="2760708001594387" type="System">
-                    <param id="0" name="Seconds">2.0</param>
+                <action behavior="Timer" id="0" name="Start timer" sid="3190515245717259" type="Sprite_Button">
+                    <param id="0" name="Duration">2</param>
+                    <param id="1" name="Type">0</param>
+                    <param id="2" name="Tag">&quot;button&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="692174317076338">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="1682896776187612" type="Sprite_Button">
+                    <param id="0" name="Tag">&quot;button&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
                 <action id="4" name="Set animation" sid="5960697668879797" type="Sprite_Button">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
