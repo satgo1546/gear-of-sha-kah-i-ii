@@ -873,6 +873,58 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite_YellowButton" sid="1843483019747188">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="The identifier of the target block." name="Target" sid="5771894147518333" type="string" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8509718873106766" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.25" y="0.40625" />
+                            <point x="0.75" y="0.40625" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.96875" y="1" />
+                            <point x="0.03125" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.25" y="0.40625" />
+                            <point x="0.75" y="0.40625" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.96875" y="1" />
+                            <point x="0.03125" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Pressing" pingpong="0" repeatcount="1" repeatto="0" sid="2698595453561608" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.25" y="0.40625" />
+                            <point x="0.75" y="0.40625" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.96875" y="1" />
+                            <point x="0.03125" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.25" y="0.40625" />
+                            <point x="0.75" y="0.40625" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.96875" y="1" />
+                            <point x="0.03125" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

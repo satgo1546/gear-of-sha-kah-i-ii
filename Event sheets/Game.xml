@@ -500,6 +500,11 @@
                 <condition behavior="Timer" id="0" name="On timer" sid="1682896776187612" type="Sprite_Button">
                     <param id="0" name="Tag">&quot;button&quot;</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="236303015958949" type="Sprite_SwitchableDirt">
+                    <param id="0" name="Instance variable">Identifier</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Sprite_Button.Target</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5960697668879797" type="Sprite_Button">
@@ -510,6 +515,55 @@
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action behavior="Solid" id="0" name="Set enabled" sid="7466267206899203" type="Sprite_SwitchableDirt">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5648656177604907">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5785336496956983" type="Sprite_PushableBlock">
+                    <param id="0" name="Object">Sprite_YellowButton</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8784820214734126" type="Sprite_SwitchableDirt">
+                    <param id="0" name="Instance variable">Identifier</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Sprite_YellowButton.Target</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9195043177088976" type="Sprite_YellowButton">
+                    <param id="0" name="Animation">&quot;Pressing&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7048654515820609" type="Sprite_SwitchableDirt">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="6049149067836894" type="Sprite_SwitchableDirt">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7603442721058099">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="8662117380739313" type="Sprite_PushableBlock">
+                    <param id="0" name="Object">Sprite_YellowButton</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2812666554773676" type="Sprite_SwitchableDirt">
+                    <param id="0" name="Instance variable">Identifier</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Sprite_YellowButton.Target</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="3417398070944001" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2654818727680639" type="Sprite_YellowButton">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8913492815777712" type="Sprite_SwitchableDirt">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="3122725806188223" type="Sprite_SwitchableDirt">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
