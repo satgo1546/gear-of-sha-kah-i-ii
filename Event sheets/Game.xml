@@ -88,7 +88,7 @@
                     <param id="0" name="Text">tokenat(Text_Area.Text, 1, &quot;: &quot;)</param>
                 </action>
                 <action id="0" name="Set text" sid="2149808019415298" type="SpriteFont_GearCount">
-                    <param id="0" name="Text">str(Gears)</param>
+                    <param id="0" name="Text">str(Sprite_Slime.Face + 10)</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="758508649786135" type="Sprite_Text">
                     <param id="0" name="Opacity">Sprite_Hints.Opacity</param>
@@ -565,6 +565,92 @@
                 </action>
                 <action behavior="Solid" id="0" name="Set enabled" sid="3122725806188223" type="Sprite_SwitchableDirt">
                     <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1616362401588328">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="6285804469288118" type="Sprite_Slime">
+                    <param id="0" name="Side">0</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="8874306259398762" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9453041614239802" type="Sprite_Slime">
+                    <param id="0" name="Instance variable">Face</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="2249356045349831" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;TurnL2R&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8130074868120396" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="-10" name="Set value" sid="956115645643396" type="Sprite_Slime">
+                    <param id="0" name="Instance variable">Face</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2139574361125092" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;MoveR&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9907724649315294">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="2843318174025198" type="Sprite_Slime">
+                    <param id="0" name="Side">1</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="9015849303034136" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="539193867917609" type="Sprite_Slime">
+                    <param id="0" name="Instance variable">Face</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="2408653053088019" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;TurnR2L&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4632991868676344" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="-10" name="Set value" sid="871821096644513" type="Sprite_Slime">
+                    <param id="0" name="Instance variable">Face</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1230456201438703" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;MoveL&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2239703428050085">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7413475347072511" type="Sprite_Slime">
+                    <param id="0" name="Instance variable">Face</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="470143479749476" type="Sprite_Slime">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4032722004614794">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6069767359852893" type="Sprite_Slime">
+                    <param id="0" name="Instance variable">Face</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="2924080003607466" type="Sprite_Slime">
+                    <param id="0" name="Control">1</param>
                 </action>
             </actions>
         </event-block>
