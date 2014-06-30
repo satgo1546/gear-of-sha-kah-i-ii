@@ -617,12 +617,12 @@
                     <behavior-instances>
                         <behavior-instance type="Platform">
                             <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
+                                <max-speed>140</max-speed>
+                                <acceleration>630</acceleration>
+                                <deceleration>630</deceleration>
+                                <jump-strength>280</jump-strength>
+                                <gravity>1450</gravity>
+                                <max-fall-speed>950</max-fall-speed>
                                 <default-controls>No</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
