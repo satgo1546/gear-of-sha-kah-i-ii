@@ -633,6 +633,12 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">-1</param>
                 </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="4979155323028529" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;VanishL&quot;</param>
+                </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="9262927562630735" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;VanishR&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="470143479749476" type="Sprite_Slime">
@@ -647,11 +653,34 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="3395414051452969" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;VanishL&quot;</param>
+                </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="6409065299212754" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;VanishR&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="2924080003607466" type="Sprite_Slime">
                     <param id="0" name="Control">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="6127868423204482">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1996005662026785" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_Slime</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6988072288624082" type="Sprite_Slime">
+                    <param id="0" name="Animation">&quot;Vanish&quot; &amp; (Sprite_Slime.Face = -1 ? &quot;L&quot; : &quot;R&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5676697821040908" type="System">
+                    <param id="0" name="Seconds">0.417</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1982488242660331" type="Sprite_Slime" />
             </actions>
         </event-block>
     </events>
