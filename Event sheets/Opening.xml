@@ -3,8 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Opening</name>
     <events>
-        <include>Fade</include>
-        <include>MovingDecorations</include>
+        <include>Common</include>
         <event-block sid="6452347173183109">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3998394253885816" type="System" />

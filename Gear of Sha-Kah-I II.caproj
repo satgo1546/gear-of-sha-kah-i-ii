@@ -1176,13 +1176,10 @@
         <event-sheet>Logo.xml</event-sheet>
         <event-sheet>Game.xml</event-sheet>
         <event-sheet>Title.xml</event-sheet>
-        <event-sheet>MovingDecorations.xml</event-sheet>
-        <event-sheet>Fade.xml</event-sheet>
         <event-sheet>Saves.xml</event-sheet>
-        <event-sheet>TextButtons.xml</event-sheet>
-        <event-sheet>StageName.xml</event-sheet>
         <event-sheet>Instructions.xml</event-sheet>
         <event-sheet>Opening.xml</event-sheet>
+        <event-sheet>Common.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
