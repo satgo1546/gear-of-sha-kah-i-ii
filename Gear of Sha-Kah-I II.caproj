@@ -1200,9 +1200,6 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
-        <object-type name="Text" sid="9562146827323484">
-            <plugin id="Text" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

@@ -762,16 +762,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="632034027979213">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="3435378689065621" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="7580842355398903" type="Text">
-                    <param id="0" name="Text">str(Sprite_Player.Platform.Speed)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="6972578137768586">
             <conditions>
                 <condition id="9" name="Is overlapping at offset" sid="2077135193619506" type="Sprite_Player">
