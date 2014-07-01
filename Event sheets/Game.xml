@@ -478,6 +478,20 @@
                 <action id="-9" name="Destroy" sid="2748803461515411" type="Sprite_Gear" />
             </actions>
         </event-block>
+        <event-block sid="6851720915510841">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6456860959935835" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_GreenGear</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="9741289536645758" type="System">
+                    <param id="0" name="Variable">Gears</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6023308779921808" type="Sprite_GreenGear" />
+            </actions>
+        </event-block>
         <event-block sid="391604620585458">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="9234511637655801" type="Sprite_Player">
