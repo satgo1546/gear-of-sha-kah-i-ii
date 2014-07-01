@@ -460,6 +460,24 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5411129125551212">
+            <conditions>
+                <condition id="0" name="On function" sid="8763559782063347" type="Function">
+                    <param id="0" name="Name">&quot;player-respawn&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4566431820530905" type="Sprite_Spawnpoint">
+                    <param id="0" name="Instance variable">Stage</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">int(SpriteFont_StageNumber.Text)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="5489272505964627" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_Spawnpoint</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="834471251237043">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5959591029799524" type="Sprite_Player">
@@ -725,6 +743,19 @@
                     <param id="0" name="Seconds">0.417</param>
                 </action>
                 <action id="-9" name="Destroy" sid="1982488242660331" type="Sprite_Slime" />
+            </actions>
+        </event-block>
+        <event-block sid="4129810343161381">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5317247921247791" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_Pricks</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="7376330762368725" type="Function">
+                    <param id="0" name="Name">&quot;player-respawn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
         </event-block>
     </events>
