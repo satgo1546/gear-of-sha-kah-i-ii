@@ -745,10 +745,14 @@
                 <action id="-9" name="Destroy" sid="1982488242660331" type="Sprite_Slime" />
             </actions>
         </event-block>
-        <event-block sid="4129810343161381">
+        <event-block any="1" sid="4129810343161381">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5317247921247791" type="Sprite_Player">
                     <param id="0" name="Object">Sprite_Pricks</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7110232017413808" type="Sprite_Player">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
                 </condition>
             </conditions>
             <actions>
