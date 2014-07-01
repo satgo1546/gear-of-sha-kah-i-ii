@@ -66,17 +66,38 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="9patch_Data" uid="18">
+                <instance type="Sprite_Text" uid="23">
                     <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Stretch</fill>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Button>false</Button>
+                        <ButtonTag></ButtonTag>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>64</y>
+                        <z>0</z>
+                        <width>269</width>
+                        <height>53</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501858711</hotspotX>
+                        <hotspotY>0.509433985</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_Data" uid="44">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <Slot>1</Slot>
@@ -92,20 +113,16 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="9patch_Data" uid="24">
+                <instance type="Sprite_Data" uid="45">
                     <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Stretch</fill>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <Slot>2</Slot>
@@ -121,20 +138,16 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="9patch_Data" uid="25">
+                <instance type="Sprite_Data" uid="46">
                     <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Stretch</fill>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
                         <Slot>3</Slot>
@@ -150,6 +163,82 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_Data" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Slot>4</Slot>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
+                        <y>512</y>
+                        <z>0</z>
+                        <width>512</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_Data" uid="48">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Slot>5</Slot>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>512</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_Data" uid="49">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Slot>6</Slot>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
+                        <y>768</y>
+                        <z>0</z>
+                        <width>512</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -309,93 +398,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="9patch_Data" uid="32">
-                    <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Stretch</fill>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
-                    </properties>
-                    <instance-variables>
-                        <Slot>5</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>64</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>512</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="9patch_Data" uid="33">
-                    <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Stretch</fill>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
-                    </properties>
-                    <instance-variables>
-                        <Slot>4</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>64</x>
-                        <y>512</y>
-                        <z>0</z>
-                        <width>512</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="9patch_Data" uid="34">
-                    <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Stretch</fill>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
-                    </properties>
-                    <instance-variables>
-                        <Slot>6</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>64</x>
-                        <y>768</y>
-                        <z>0</z>
-                        <width>512</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sprite_Text" uid="35">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -548,182 +550,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.192307696</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Text" uid="23">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>2</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Button>false</Button>
-                        <ButtonTag></ButtonTag>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>64</y>
-                        <z>0</z>
-                        <width>269</width>
-                        <height>53</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501858711</hotspotX>
-                        <hotspotY>0.509433985</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Player_Data" uid="44">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Slot>1</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>160</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.25</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Player_Data" uid="45">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Slot>2</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>288</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.25</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Player_Data" uid="46">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Slot>3</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>416</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.25</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Player_Data" uid="47">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Slot>4</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>544</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.25</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Player_Data" uid="48">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Slot>5</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>672</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.25</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Player_Data" uid="49">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Slot>6</Slot>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>800</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.25</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
