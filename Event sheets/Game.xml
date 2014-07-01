@@ -762,5 +762,37 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="632034027979213">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3435378689065621" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7580842355398903" type="Text">
+                    <param id="0" name="Text">str(Sprite_Player.Platform.Speed)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6972578137768586">
+            <conditions>
+                <condition id="9" name="Is overlapping at offset" sid="2077135193619506" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_DestroyableBlock</param>
+                    <param id="1" name="Offset X">0</param>
+                    <param id="2" name="Offset Y">4</param>
+                </condition>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="2981472323511366" type="Sprite_Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Speed">260</param>
+                </condition>
+                <condition behavior="Platform" id="4" name="Is falling" sid="3249424212002313" type="Sprite_Player" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8661403569423888" type="Sprite_DestroyableBlock">
+                    <param id="0" name="Object">Particles_DestroyableBlock</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5387850042861208" type="Sprite_DestroyableBlock" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
