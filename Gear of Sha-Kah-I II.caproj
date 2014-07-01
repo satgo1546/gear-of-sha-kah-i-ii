@@ -135,7 +135,7 @@
                 <instance-variable name="ButtonTag" sid="8226274857943556" type="string" />
             </instance-variables>
             <animation-folder expanded="1">
-                <animation framecount="34" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
+                <animation framecount="35" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
                     <frame duration="1" hotspotX="0.501992" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.5" y="0.00531915" />
@@ -213,6 +213,18 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.947368" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.947368" y="0.833333" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.105263" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
