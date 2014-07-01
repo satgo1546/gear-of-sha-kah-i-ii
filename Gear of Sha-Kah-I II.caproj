@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -1178,6 +1179,29 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Sprite_DestroyableBlock" sid="2939271520014404">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4128968988164797">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8449762534503105" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles_DestroyableBlock" sid="5510277280385305">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Text" sid="9562146827323484">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
