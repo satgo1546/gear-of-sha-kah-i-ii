@@ -13,10 +13,6 @@
                 <condition id="-2" name="On start of layout" sid="2040122900933751" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="8994375235845949" type="Function">
-                    <param id="0" name="Name">&quot;fade&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black&quot;</param>
-                </action>
                 <action id="-18" name="Set layer opacity" sid="1149827246109178" type="System">
                     <param id="0" name="Layer">&quot;Menu&quot;</param>
                     <param id="1" name="Opacity">0</param>

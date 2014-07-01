@@ -415,5 +415,142 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Scrolling</comment>
+        <event-block sid="988361933984145">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9285259751756483" type="Mouse">
+                    <param id="0" name="Object">Sprite_ScrollButtons</param>
+                </condition>
+                <condition id="2" name="Mouse button is down" sid="732839308212443" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2676379894840385" type="Sprite_ScrollButtons">
+                    <param id="0" name="Frame number">Sprite_ScrollButtons.HoverFrame</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7005865674676375">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="309402723068727" type="Sprite_ScrollButtons">
+                            <param id="0" name="Instance variable">NormalFrame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="6626761154532978" type="Camera">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7597436473399968">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1473877249445528" type="Sprite_ScrollButtons">
+                            <param id="0" name="Instance variable">NormalFrame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="4419635189682038" type="Camera">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4114848608897623">
+            <conditions>
+                <condition id="-22" name="Else" sid="8278633881395234" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="335992454634578" type="Sprite_ScrollButtons">
+                    <param id="0" name="Frame number">Sprite_ScrollButtons.NormalFrame</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>On start of layout</comment>
+        <event-block sid="940810916916608">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6549443071293176" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="6909264589869648">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3740038816732066" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Game&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="8903029072527917" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Saves&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="7683919075944556" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Instructions&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="4215097137049659" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="8261261346137297">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6695963670806594" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Title&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="3573708109258408" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Opening&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="3000869861101702" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black-slow&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="8808109372297392">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="776031262720114" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Saves&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="5208990127343438" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Instructions&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="7915321040911249" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Opening&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9452701939328253" type="System">
+                            <param id="0" name="Object to create">Camera</param>
+                            <param id="1" name="Layer">&quot;Main&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
