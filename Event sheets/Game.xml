@@ -26,6 +26,9 @@
                 <action id="5" name="Set frame" sid="6271207261362083" type="Sprite_Savepoint">
                     <param id="0" name="Frame number">random(Self.AnimationFrameCount)</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="9373768743254481" type="Sprite_SignContents">
+                    <param id="0" name="Opacity">0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="9863702040335516">

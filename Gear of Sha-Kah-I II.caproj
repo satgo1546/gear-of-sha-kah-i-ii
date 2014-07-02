@@ -1251,6 +1251,26 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+        <object-type name="Sprite_SignContents" sid="9725305119395205">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="867365145905907">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3349119797931332" speed="0">
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
