@@ -826,5 +826,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="7371605083188618">
+            <conditions>
+                <condition id="3" name="On key released" sid="6121795529348805" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="1371911760070082" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_Savepoint</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="1898638982155923" type="System">
+                    <param id="0" name="Slot">&quot;goss&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

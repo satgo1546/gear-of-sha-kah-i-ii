@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Data</name>
+    <events>
+        <include>Common</include>
+        <event-block sid="5964171279257821">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1687561998117645" type="Mouse">
+                    <param id="0" name="Object">Sprite_Data</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2063960818920467" type="Sprite_Data">
+                    <param id="0" name="Animation">&quot;Selecting&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7118123637446003">
+            <conditions>
+                <condition id="-22" name="Else" sid="1965642076538059" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5559986977844577" type="Sprite_Data">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3747398021293569">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7964506620193817" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite_Data</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="9628024694207372" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Load&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-37" name="Load" sid="5350333285049765" type="System">
+                    <param id="0" name="Slot">&quot;goss&quot; &amp; Sprite_Data.Slot</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6337193305553889">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4576475304171753" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite_Data</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="9297026236032071" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Save&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="9558746498513056" type="System">
+                    <param id="0" name="Slot">&quot;goss&quot; &amp; Sprite_Data.Slot</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="5482261353588584">
+            <conditions>
+                <condition id="-29" name="On load complete" sid="9299029212861745" type="System" />
+                <condition id="-28" name="On save complete" sid="7818142174165262" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="4305666830350118" type="Function">
+                    <param id="0" name="Name">&quot;fade&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="4013105278240528" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6200053700042762" type="System">
+                    <param id="0" name="Layout">Game</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>TODO: add a sound effect</comment>
+        <event-block sid="9466120823082232">
+            <conditions>
+                <condition id="-30" name="On load failed" sid="7251356067712768" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

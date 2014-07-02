@@ -192,7 +192,7 @@
                             <param id="0" name="Seconds">0.4</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="7294247161715424" type="System">
-                            <param id="0" name="Layout">Saves</param>
+                            <param id="0" name="Layout">Load</param>
                         </action>
                     </actions>
                 </event-block>
@@ -485,10 +485,15 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;Game&quot;</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="6291464159048656" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Load&quot;</param>
+                        </condition>
                         <condition id="-8" name="Compare two values" sid="8903029072527917" type="System">
                             <param id="0" name="First value">LayoutName</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Saves&quot;</param>
+                            <param id="2" name="Second value">&quot;Save&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="7683919075944556" type="System">
                             <param id="0" name="First value">LayoutName</param>
@@ -528,7 +533,12 @@
                         <condition id="-8" name="Compare two values" sid="776031262720114" type="System">
                             <param id="0" name="First value">LayoutName</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Saves&quot;</param>
+                            <param id="2" name="Second value">&quot;Load&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="8898720966505711" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Save&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="5208990127343438" type="System">
                             <param id="0" name="First value">LayoutName</param>

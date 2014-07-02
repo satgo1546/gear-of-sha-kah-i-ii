@@ -136,7 +136,7 @@
                 <instance-variable name="ButtonTag" sid="8226274857943556" type="string" />
             </instance-variables>
             <animation-folder expanded="1">
-                <animation framecount="35" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
+                <animation framecount="36" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
                     <frame duration="1" hotspotX="0.501992" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.5" y="0.00531915" />
@@ -224,6 +224,14 @@
                             <point x="0.5" y="1" />
                             <point x="0" y="1" />
                             <point x="0.105263" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0111111" y="0.0185185" />
+                            <point x="0.985185" y="0.037037" />
+                            <point x="0.996296" y="0.981481" />
+                            <point x="0.0111111" y="0.944444" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1222,14 +1230,15 @@
         <layout>Game.xml</layout>
         <layout>Title.xml</layout>
         <layout>Dummy.xml</layout>
-        <layout>Saves.xml</layout>
+        <layout>Load.xml</layout>
+        <layout>Save.xml</layout>
         <layout>Instructions.xml</layout>
         <layout>Opening.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Logo.xml</event-sheet>
         <event-sheet>Game.xml</event-sheet>
-        <event-sheet>Saves.xml</event-sheet>
+        <event-sheet>Data.xml</event-sheet>
         <event-sheet>Opening.xml</event-sheet>
         <event-sheet>Common.xml</event-sheet>
     </event-folder>
