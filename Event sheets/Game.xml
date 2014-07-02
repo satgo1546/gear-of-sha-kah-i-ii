@@ -17,6 +17,15 @@
                     <param id="0" name="Layer">&quot;Menu&quot;</param>
                     <param id="1" name="Opacity">0</param>
                 </action>
+                <action id="5" name="Set frame" sid="9865585431577985" type="Sprite_DestroyableBlock">
+                    <param id="0" name="Frame number">random(Self.AnimationFrameCount)</param>
+                </action>
+                <action id="5" name="Set frame" sid="477179827717742" type="Sprite_PushableBlock">
+                    <param id="0" name="Frame number">random(Self.AnimationFrameCount)</param>
+                </action>
+                <action id="5" name="Set frame" sid="6271207261362083" type="Sprite_Savepoint">
+                    <param id="0" name="Frame number">random(Self.AnimationFrameCount)</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="9863702040335516">
