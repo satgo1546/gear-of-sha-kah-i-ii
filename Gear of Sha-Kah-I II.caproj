@@ -1157,7 +1157,7 @@
         <object-type name="Sprite_Spawnpoint" sid="7870742141748021">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="Stage" sid="1023936654660821" type="number" />
+                <instance-variable name="Stage2" sid="4004933930787548" type="string" />
             </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6107046694739463" speed="5">

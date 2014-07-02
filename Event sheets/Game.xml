@@ -88,6 +88,9 @@
                 <action id="-16" name="Set opacity" sid="8523517719213454" type="Sprite_BGs">
                     <param id="0" name="Opacity">Sprite_Hints.Opacity * 0.75</param>
                 </action>
+                <action id="-1" name="Set X" sid="3292547231979223" type="SpriteFont_StageName">
+                    <param id="0" name="X">SpriteFont_StageNumber.X + SpriteFont_StageNumber.TextWidth + SpriteFont_StageNumber.CharacterSpacing * 2</param>
+                </action>
             </actions>
         </event-block>
         <comment>I didn&apos;t find anything useful to pick the decoration and the black.</comment>
@@ -334,6 +337,20 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block any="1" sid="1827906039572007">
+            <conditions>
+                <condition id="-18" name="On created" sid="8733659659418315" type="SpriteFont_StageNumber" />
+                <condition id="0" name="On function" sid="2099666165152237" type="Function">
+                    <param id="0" name="Name">&quot;reload-spritefonts&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set character width" sid="8469063151921595" type="SpriteFont_StageNumber">
+                    <param id="0" name="Character">&quot;-&quot;</param>
+                    <param id="1" name="Width">16</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="1973476299049925">
             <conditions>
                 <condition id="0" name="On key pressed" sid="7717956466051489" type="Keyboard">
@@ -466,9 +483,9 @@
                     <param id="0" name="Name">&quot;player-respawn&quot;</param>
                 </condition>
                 <condition id="-7" name="Compare instance variable" sid="4566431820530905" type="Sprite_Spawnpoint">
-                    <param id="0" name="Instance variable">Stage</param>
+                    <param id="0" name="Instance variable">Stage2</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">int(SpriteFont_StageNumber.Text)</param>
+                    <param id="2" name="Value">SpriteFont_StageNumber.Text</param>
                 </condition>
             </conditions>
             <actions>
