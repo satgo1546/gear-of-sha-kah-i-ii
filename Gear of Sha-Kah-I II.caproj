@@ -702,6 +702,9 @@
                 <behavior-type name="Platform" sid="1709851306278974">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="Persist" sid="2351663024607762">
+                    <behavior id="Persist" />
+                </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6240562171385151" speed="0">
@@ -721,6 +724,9 @@
                 <behavior-type name="Solid" sid="531025108793404">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Persist" sid="6992903746510951">
+                    <behavior id="Persist" />
+                </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4647872147631372" speed="0">
@@ -739,6 +745,9 @@
             <behaviors>
                 <behavior-type name="Timer" sid="7655575683015159">
                     <behavior id="Timer" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="7166478897031506">
+                    <behavior id="Persist" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -836,6 +845,11 @@
         </object-type>
         <object-type name="Sprite_Gear" sid="5418962955478026">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Persist" sid="3039454466947057">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7249128928338747" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -858,6 +872,11 @@
             <instance-variables>
                 <instance-variable comment="The identifier of the target block." name="Target" sid="5771894147518333" type="string" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Persist" sid="5342406028581211">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8509718873106766" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="1">
@@ -913,6 +932,9 @@
             <behaviors>
                 <behavior-type name="Platform" sid="9934575032702923">
                     <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="5580399802119833">
+                    <behavior id="Persist" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -1144,6 +1166,9 @@
                 <behavior-type name="Platform" sid="8370188451723153">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="Persist" sid="3477623209910166">
+                    <behavior id="Persist" />
+                </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9335269195384255" speed="5">
@@ -1193,6 +1218,9 @@
             <behaviors>
                 <behavior-type name="Solid" sid="4128968988164797">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="6299032740095997">
+                    <behavior id="Persist" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
