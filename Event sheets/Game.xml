@@ -873,6 +873,9 @@
                     <param id="0" name="Where">0</param>
                     <param id="1" name="Object">Sprite_Sign</param>
                 </action>
+                <action id="5" name="Set frame" sid="4879899592349054" type="Sprite_SignContents">
+                    <param id="0" name="Frame number">Sprite_Sign.Contents</param>
+                </action>
                 <action id="4" name="Set animation" sid="8279604671567998" type="Sprite_Sign">
                     <param id="0" name="Animation">&quot;Reading&quot;</param>
                     <param id="1" name="From">1</param>
