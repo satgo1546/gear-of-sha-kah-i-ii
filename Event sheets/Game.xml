@@ -495,7 +495,7 @@
                     <param id="0" name="Name">&quot;player-respawn&quot;</param>
                 </condition>
                 <condition id="-7" name="Compare instance variable" sid="4566431820530905" type="Sprite_Spawnpoint">
-                    <param id="0" name="Instance variable">Stage2</param>
+                    <param id="0" name="Instance variable">Stage</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">SpriteFont_StageNumber.Text</param>
                 </condition>
