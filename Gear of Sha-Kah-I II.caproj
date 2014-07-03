@@ -34,6 +34,7 @@
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -1293,6 +1294,15 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="9patch_JumpThru" sid="1018324593275462">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="9495688538515785">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture />
         </object-type>
     </object-folder>
     <families />
