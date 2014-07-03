@@ -1271,6 +1271,29 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite_Sign" sid="6910060793578862">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="The frame of Sprite_SignContents." name="Contents" sid="4049684637420125" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer" sid="5883160374931497">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3407119398420449" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Contents" x="0.5" y="-2" />
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Reading" pingpong="0" repeatcount="2" repeatto="-1" sid="610727515141549" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

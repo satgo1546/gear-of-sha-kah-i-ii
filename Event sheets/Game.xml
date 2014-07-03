@@ -851,5 +851,51 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6883720415389632">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1408122439518772" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="9169649229569417" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_Sign</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="1907824374559525" type="Sprite_Sign">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="2356749171992272" type="Sprite_Sign">
+                    <param id="0" name="Object">Sprite_SignContents</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">&quot;Contents&quot;</param>
+                </action>
+                <action id="-29" name="Move to object" sid="5922594759423695" type="Sprite_SignContents">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Object">Sprite_Sign</param>
+                </action>
+                <action id="4" name="Set animation" sid="8279604671567998" type="Sprite_Sign">
+                    <param id="0" name="Animation">&quot;Reading&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Timer" id="0" name="Start timer" sid="6424609810874015" type="Sprite_Sign">
+                    <param id="0" name="Duration">4.4</param>
+                    <param id="1" name="Type">0</param>
+                    <param id="2" name="Tag">&quot;contents-fadeout&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8331763120435771">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="9849416528822794" type="Sprite_Sign">
+                    <param id="0" name="Tag">&quot;contents-fadeout&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9903000905636157" type="Sprite_Sign">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
