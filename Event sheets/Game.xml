@@ -579,6 +579,9 @@
                 <action behavior="Solid" id="0" name="Set enabled" sid="4692753795157536" type="Sprite_SwitchableDirt">
                     <param id="0" name="State">0</param>
                 </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="9816835941183262" type="Sprite_GreenGear">
+                    <param id="0" name="Control">2</param>
+                </action>
                 <action behavior="Timer" id="0" name="Start timer" sid="3190515245717259" type="Sprite_Button">
                     <param id="0" name="Duration">2</param>
                     <param id="1" name="Type">0</param>
@@ -608,6 +611,9 @@
                 <action behavior="Solid" id="0" name="Set enabled" sid="7466267206899203" type="Sprite_SwitchableDirt">
                     <param id="0" name="State">1</param>
                 </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="9723115915032946" type="Sprite_GreenGear">
+                    <param id="0" name="Control">2</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5648656177604907">
@@ -631,6 +637,9 @@
                 </action>
                 <action behavior="Solid" id="0" name="Set enabled" sid="6049149067836894" type="Sprite_SwitchableDirt">
                     <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="2530597368421317" type="Sprite_GreenGear">
+                    <param id="0" name="Control">2</param>
                 </action>
             </actions>
         </event-block>
@@ -656,6 +665,9 @@
                 </action>
                 <action behavior="Solid" id="0" name="Set enabled" sid="3122725806188223" type="Sprite_SwitchableDirt">
                     <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="9510542710717664" type="Sprite_GreenGear">
+                    <param id="0" name="Control">2</param>
                 </action>
             </actions>
         </event-block>
