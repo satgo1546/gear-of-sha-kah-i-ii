@@ -1408,6 +1408,17 @@
             </behaviors>
             <texture />
         </object-type>
+        <object-type name="Sprite_Ending" sid="6676042808658651">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6585127483688631" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -1419,12 +1430,13 @@
         <layout>Save.xml</layout>
         <layout>Instructions.xml</layout>
         <layout>Opening.xml</layout>
+        <layout>Ending.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Logo.xml</event-sheet>
         <event-sheet>Game.xml</event-sheet>
         <event-sheet>Data.xml</event-sheet>
-        <event-sheet>Opening.xml</event-sheet>
+        <event-sheet>OP&amp;ED.xml</event-sheet>
         <event-sheet>Common.xml</event-sheet>
     </event-folder>
     <global-instances>

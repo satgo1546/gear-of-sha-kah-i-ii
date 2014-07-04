@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>OP&amp;ED</name>
+    <events>
+        <include>Common</include>
+        <event-block sid="6452347173183109">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3998394253885816" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="4" name="Set max speed" sid="1494760892629417" type="Camera">
+                    <param id="0" name="Max Speed">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3570799193549998">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8282529725995916" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="6867531511115407" type="Camera">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3891202932875531">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="1434058434886021" type="System">
+                    <param id="0" name="First value">Camera.BBoxBottom</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">LayoutHeight</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3200726833497904">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2553862334807661" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Opening&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="3829940579162812" type="System">
+                            <param id="0" name="Layout">Instructions</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2166970052534329">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8860985312435626" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Ending&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="2463295922384046" type="System">
+                            <param id="0" name="Seconds">6</param>
+                        </action>
+                        <action id="0" name="Call function" sid="2199903746564677" type="Function">
+                            <param id="0" name="Name">&quot;fade&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1856875784456659" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2841432984235542" type="System">
+                            <param id="0" name="Layout">Title</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

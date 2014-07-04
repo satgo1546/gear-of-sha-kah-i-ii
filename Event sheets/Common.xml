@@ -520,6 +520,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;Opening&quot;</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="6529604471099195" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Ending&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Call function" sid="3000869861101702" type="Function">
@@ -549,6 +554,11 @@
                             <param id="0" name="First value">LayoutName</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;Opening&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="6162862731872918" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Ending&quot;</param>
                         </condition>
                     </conditions>
                     <actions>

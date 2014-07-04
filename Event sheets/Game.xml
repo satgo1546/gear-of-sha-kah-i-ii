@@ -808,11 +808,7 @@
                 <condition id="9" name="Is overlapping at offset" sid="2077135193619506" type="Sprite_Player">
                     <param id="0" name="Object">Sprite_DestroyableBlock</param>
                     <param id="1" name="Offset X">0</param>
-                    <param id="2" name="Offset Y">4</param>
-                </condition>
-                <condition behavior="Platform" id="1" name="Compare speed" sid="2981472323511366" type="Sprite_Player">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Speed">260</param>
+                    <param id="2" name="Offset Y">10</param>
                 </condition>
                 <condition behavior="Platform" id="4" name="Is falling" sid="3249424212002313" type="Sprite_Player" />
             </conditions>
