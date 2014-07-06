@@ -162,13 +162,12 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.192308" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.00495049" y="0.02" />
-                            <point x="0.5" y="0.02" />
-                            <point x="0.955446" y="0.18" />
-                            <point x="0.955446" y="0.82" />
-                            <point x="0.5" y="0.98" />
-                            <point x="0.00495049" y="0.98" />
-                            <point x="0.0841584" y="0.5" />
+                            <point x="0.0192308" y="0.0714286" />
+                            <point x="0.480769" y="0.0714286" />
+                            <point x="0.942308" y="0.142857" />
+                            <point x="0.942308" y="0.785714" />
+                            <point x="0.480769" y="0.928571" />
+                            <point x="0.0192308" y="0.857143" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1459,6 +1458,14 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                     <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite_EndingEntrance" sid="1771990103889234">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565956456046491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

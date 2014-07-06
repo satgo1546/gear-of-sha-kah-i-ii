@@ -908,5 +908,24 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8366566106144254">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4329780831097277" type="Sprite_Player">
+                    <param id="0" name="Object">Sprite_EndingEntrance</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="4694848308507852" type="Function">
+                    <param id="0" name="Name">&quot;fade&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;white&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8206139593859436" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="5350059641358594" type="System">
+                    <param id="0" name="Layout">Ending</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
