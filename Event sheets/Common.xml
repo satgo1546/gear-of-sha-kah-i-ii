@@ -332,13 +332,18 @@
                         <action behavior="FadeOut" id="0" name="Restart fade" sid="1811687813400258" type="Sprite_Hints" />
                     </actions>
                 </event-block>
-                <comment>↓ Instructions</comment>
-                <event-block sid="2145085420460517">
+                <comment>↓ Instructions &amp; Opening</comment>
+                <event-block any="1" sid="2145085420460517">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="2405092679213923" type="Sprite_Text">
                             <param id="0" name="Instance variable">ButtonTag</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;continue&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="928605912835989" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;skip-op&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -349,30 +354,8 @@
                         <action id="-16" name="Wait" sid="3648308674571499" type="System">
                             <param id="0" name="Seconds">0.4</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="794837246037206" type="System">
-                            <param id="0" name="Layout">Game</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>↓ Opening</comment>
-                <event-block sid="8052928263981247">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="928605912835989" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;skip-op&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="539842556897291" type="Function">
-                            <param id="0" name="Name">&quot;fade&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="3803323437758638" type="System">
-                            <param id="0" name="Seconds">0.4</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="375054456922108" type="System">
-                            <param id="0" name="Layout">Instructions</param>
+                        <action id="-25" name="Go to layout (by name)" sid="8252517195381223" type="System">
+                            <param id="0" name="Layout">Sprite_Text.ButtonTag = &quot;continue&quot; ? &quot;Game&quot; : &quot;Instructions&quot;</param>
                         </action>
                     </actions>
                 </event-block>
