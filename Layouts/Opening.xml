@@ -5,7 +5,7 @@
     <event-sheet>OP&amp;ED</event-sheet>
     <size>
         <width>640</width>
-        <height>1440</height>
+        <height>1248</height>
     </size>
     <margins>
         <horizontal>32</horizontal>
@@ -65,7 +65,30 @@
             <force-own-texture>0</force-own-texture>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Sprite_Opening" uid="578">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>320</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>588</width>
+                        <height>239</height>
+                        <depth>0</depth>
+                        <hotspotX>0.520408154</hotspotX>
+                        <hotspotY>0.552301228</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="Decorations" sid="854742269621605">

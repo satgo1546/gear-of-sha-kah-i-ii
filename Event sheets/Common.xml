@@ -484,7 +484,7 @@
             <actions>
                 <action id="0" name="Call function" sid="5541603249972887" type="Function">
                     <param id="0" name="Name">&quot;fade&quot;</param>
-                    <param id="1" name="Parameter {n}">(LayoutName = &quot;Game&quot; | LayoutName = &quot;Load&quot; | LayoutName = &quot;Save&quot; | LayoutName = &quot;Instructions&quot; | LayoutName = &quot;Ending&quot;) ? &quot;in&quot; : &quot;none&quot;{###}LayoutName = &quot;Ending&quot; ? &quot;white&quot; : (&quot;black&quot; &amp; ((LayoutName = &quot;Title&quot; | LayoutName = &quot;Opening&quot;) ? &quot;-slow&quot; : &quot;&quot;))</param>
+                    <param id="1" name="Parameter {n}">(LayoutName = &quot;Game&quot; | LayoutName = &quot;Load&quot; | LayoutName = &quot;Save&quot; | LayoutName = &quot;Instructions&quot; | LayoutName = &quot;Opening&quot;) ? &quot;in&quot; : &quot;none&quot;{###}LayoutName = &quot;Ending&quot; ? &quot;white&quot; : (&quot;black&quot; &amp; ((LayoutName = &quot;Title&quot; | LayoutName = &quot;Opening&quot;) ? &quot;-slow&quot; : &quot;&quot;))</param>
                 </action>
             </actions>
             <sub-events>
