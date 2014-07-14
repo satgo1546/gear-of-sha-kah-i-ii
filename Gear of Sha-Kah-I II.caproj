@@ -1504,6 +1504,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TileBG_DirtWall" sid="4853039762072581">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -1563,7 +1567,7 @@
         <file name="Title.ogg" />
     </music-folder>
     <files-folder expanded="1">
-        <file-folder expanded="0" name="Icons">
+        <file-folder expanded="1" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />
