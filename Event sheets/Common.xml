@@ -10,6 +10,11 @@
                 <condition id="0" name="On function" sid="2087540308322509" type="Function">
                     <param id="0" name="Name">&quot;fade&quot;</param>
                 </condition>
+                <condition id="1" name="Compare parameter" sid="2689681777023532" type="Function">
+                    <param id="0" name="Index">0</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">&quot;none&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="413714519514735" type="System">
@@ -476,58 +481,13 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="6549443071293176" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Call function" sid="5541603249972887" type="Function">
+                    <param id="0" name="Name">&quot;fade&quot;</param>
+                    <param id="1" name="Parameter {n}">(LayoutName = &quot;Game&quot; | LayoutName = &quot;Load&quot; | LayoutName = &quot;Save&quot; | LayoutName = &quot;Instructions&quot; | LayoutName = &quot;Ending&quot;) ? &quot;in&quot; : &quot;none&quot;{###}LayoutName = &quot;Ending&quot; ? &quot;white&quot; : (&quot;black&quot; &amp; ((LayoutName = &quot;Title&quot; | LayoutName = &quot;Opening&quot;) ? &quot;-slow&quot; : &quot;&quot;))</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block any="1" sid="6909264589869648">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="3740038816732066" type="System">
-                            <param id="0" name="First value">LayoutName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Game&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="6291464159048656" type="System">
-                            <param id="0" name="First value">LayoutName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Load&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="8903029072527917" type="System">
-                            <param id="0" name="First value">LayoutName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Save&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="7683919075944556" type="System">
-                            <param id="0" name="First value">LayoutName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Instructions&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="4215097137049659" type="Function">
-                            <param id="0" name="Name">&quot;fade&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="8261261346137297">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="6695963670806594" type="System">
-                            <param id="0" name="First value">LayoutName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Title&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="3573708109258408" type="System">
-                            <param id="0" name="First value">LayoutName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Opening&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="3000869861101702" type="Function">
-                            <param id="0" name="Name">&quot;fade&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;black-slow&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block any="1" sid="8808109372297392">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="776031262720114" type="System">
@@ -562,21 +522,6 @@
                             <param id="1" name="Layer">&quot;Main&quot;</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6299860351654103">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="6529604471099195" type="System">
-                            <param id="0" name="First value">LayoutName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;Ending&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="2869128531127273" type="Function">
-                            <param id="0" name="Name">&quot;fade&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;in&quot;{###}&quot;white&quot;</param>
                         </action>
                     </actions>
                 </event-block>
