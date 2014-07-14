@@ -137,7 +137,7 @@
                 <instance-variable name="ButtonTag" sid="8226274857943556" type="string" />
             </instance-variables>
             <animation-folder expanded="1">
-                <animation framecount="36" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
+                <animation framecount="39" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8705424872019741" speed="0">
                     <frame duration="1" hotspotX="0.501992" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.5" y="0.00531915" />
@@ -232,6 +232,41 @@
                             <point x="0.985185" y="0.037037" />
                             <point x="0.996296" y="0.981481" />
                             <point x="0.0111111" y="0.944444" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0434783" y="0.0909091" />
+                            <point x="0.5" y="0.409091" />
+                            <point x="0.934783" y="0.136364" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.978261" y="0.954545" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.0652174" y="0.863636" />
+                            <point x="0.0217391" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00763359" y="0.037037" />
+                            <point x="0.5" y="0.0925926" />
+                            <point x="0.98855" y="0.0555556" />
+                            <point x="0.965649" y="0.833333" />
+                            <point x="0.5" y="0.981481" />
+                            <point x="0.0114504" y="0.944444" />
+                            <point x="0.0343511" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502618" hotspotY="0">
+                        <collision-poly>
+                            <point x="0.0157068" y="0.130435" />
+                            <point x="0.497382" y="0.26087" />
+                            <point x="0.984293" y="0.130435" />
+                            <point x="0.994764" y="0.478261" />
+                            <point x="0.973822" y="0.782609" />
+                            <point x="0.497382" y="0.73913" />
+                            <point x="0.0209424" y="0.826087" />
+                            <point x="0.0052356" y="0.478261" />
                         </collision-poly>
                     </frame>
                 </animation>
