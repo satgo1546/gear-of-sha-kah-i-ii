@@ -363,10 +363,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="1973476299049925">
+        <event-block any="1" sid="1973476299049925">
             <conditions>
                 <condition id="0" name="On key pressed" sid="7717956466051489" type="Keyboard">
                     <param id="0" name="Key">87 (W)</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="931319410668391" type="Keyboard">
+                    <param id="0" name="Key">88 (X)</param>
                 </condition>
             </conditions>
             <actions>
