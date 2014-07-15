@@ -1574,7 +1574,23 @@
         <global-instance type="Browser" uid="7" />
         <global-instance type="Function" uid="11" />
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="cancel1.m4a" />
+        <file name="cancel1.wav" />
+        <file name="cursor1.m4a" />
+        <file name="cursor1.wav" />
+        <file name="cursor3.m4a" />
+        <file name="cursor3.wav" />
+        <file name="decide20.m4a" />
+        <file name="decide20.ogg" />
+        <file name="decide20.wav" />
+        <file name="error1.m4a" />
+        <file name="error1.ogg" />
+        <file name="error1.wav" />
+        <file name="get1.m4a" />
+        <file name="get1.ogg" />
+        <file name="get1.wav" />
+    </sounds-folder>
     <music-folder expanded="1">
         <file name="CaveB1.m4a" />
         <file name="Field.m4a" />
