@@ -1398,7 +1398,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3349119797931332" speed="0">
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3349119797931332" speed="0">
                     <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
                     <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
                     <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
@@ -1407,6 +1407,14 @@
                     <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
                     <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
                     <frame duration="1" hotspotX="0.505556" hotspotY="0.506757" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="0.506757">
+                        <collision-poly>
+                            <point x="0.0111111" y="0.0135135" />
+                            <point x="0.988889" y="0.0135135" />
+                            <point x="0.988889" y="0.986486" />
+                            <point x="0.0111111" y="0.986486" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
