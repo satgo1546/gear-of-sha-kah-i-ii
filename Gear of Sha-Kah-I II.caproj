@@ -1531,6 +1531,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text_MusicTrigger" sid="7380092812398082">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
