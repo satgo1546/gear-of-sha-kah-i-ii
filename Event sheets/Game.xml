@@ -29,6 +29,9 @@
                 <action id="-16" name="Set opacity" sid="9373768743254481" type="Sprite_SignContents">
                     <param id="0" name="Opacity">0</param>
                 </action>
+                <action id="6" name="Stop" sid="7078740543866713" type="Audio">
+                    <param id="0" name="Tag">&quot;scene-bgm&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="9863702040335516">
