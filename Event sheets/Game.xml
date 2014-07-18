@@ -935,16 +935,37 @@
                 <condition id="0" name="On collision with another object" sid="3270716997350297" type="Sprite_Player">
                     <param id="0" name="Object">Text_MusicTrigger</param>
                 </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="2324177399880332" type="Audio">
+                    <param id="0" name="Tag">&quot;game-bgm-&quot; &amp; Text_MusicTrigger.Text</param>
+                </condition>
             </conditions>
-            <actions>
-                <action id="7" name="Play (by name)" sid="4496459447273411" type="Audio">
-                    <param id="0" name="Folder">1</param>
-                    <param id="1" name="Audio file name">Text_MusicTrigger.Text</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">0</param>
-                    <param id="2" name="Tag (optional)">&quot;game-bgm&quot;</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="5146044742494223">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="7442952256690122" type="System">
+                            <param id="0" name="Object">Text_MusicTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="5870294587792589" type="Audio">
+                            <param id="0" name="Tag">&quot;game-bgm-&quot; &amp; Text_MusicTrigger.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9738343611349859">
+                    <conditions />
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="4496459447273411" type="Audio">
+                            <param id="0" name="Folder">1</param>
+                            <param id="1" name="Audio file name">Text_MusicTrigger.Text</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;game-bgm-&quot; &amp; Text_MusicTrigger.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="2017149876969828">
             <conditions>
