@@ -156,7 +156,14 @@
                     <param id="0" name="Instance variable">Button</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="6572816918878746" type="Audio">
+                    <param id="0" name="Audio file">decide20</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <comment>↓ Title, Instructions &amp; Opening</comment>
                 <event-block any="1" sid="2145085420460517">
@@ -434,6 +441,18 @@
                     <param id="0" name="Name">&quot;fade&quot;</param>
                     <param id="1" name="Parameter {n}">(LayoutName = &quot;Game&quot; | LayoutName = &quot;Load&quot; | LayoutName = &quot;Save&quot; | LayoutName = &quot;Instructions&quot; | LayoutName = &quot;Opening&quot; | LayoutName = &quot;Title&quot;) ? &quot;in&quot; : &quot;none&quot;{###}LayoutName = &quot;Ending&quot; ? &quot;white&quot; : (&quot;black&quot; &amp; ((LayoutName = &quot;Title&quot; | LayoutName = &quot;Opening&quot;) ? &quot;-slow&quot; : &quot;&quot;))</param>
                 </action>
+                <action id="4" name="Preload" sid="9308849410920643" type="Audio">
+                    <param id="0" name="Audio file">cursor1</param>
+                </action>
+                <action id="4" name="Preload" sid="1642133080198969" type="Audio">
+                    <param id="0" name="Audio file">decide20</param>
+                </action>
+                <action id="4" name="Preload" sid="4776406718911371" type="Audio">
+                    <param id="0" name="Audio file">cancel1</param>
+                </action>
+                <action id="4" name="Preload" sid="4366913780277596" type="Audio">
+                    <param id="0" name="Audio file">error1</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block any="1" sid="8808109372297392">
@@ -487,12 +506,15 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="6" name="Stop" sid="841424848473915" type="Audio">
+                            <param id="0" name="Tag">&quot;scene-bgm&quot;</param>
+                        </action>
                         <action id="7" name="Play (by name)" sid="1104791185079479" type="Audio">
                             <param id="0" name="Folder">1</param>
                             <param id="1" name="Audio file name">LayoutName</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">0</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;scene-bgm&quot;</param>
                         </action>
                     </actions>
                 </event-block>

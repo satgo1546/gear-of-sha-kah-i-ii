@@ -72,6 +72,12 @@
                 <condition id="-28" name="On save complete" sid="7818142174165262" type="System" />
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="5749123906817387" type="Audio">
+                    <param id="0" name="Audio file">decide20</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Call function" sid="4305666830350118" type="Function">
                     <param id="0" name="Name">&quot;fade&quot;</param>
                     <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
@@ -84,12 +90,18 @@
                 </action>
             </actions>
         </event-block>
-        <comment>TODO: add a sound effect</comment>
         <event-block sid="9466120823082232">
             <conditions>
                 <condition id="-30" name="On load failed" sid="7251356067712768" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="3052861423085002" type="Audio">
+                    <param id="0" name="Audio file">error1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
