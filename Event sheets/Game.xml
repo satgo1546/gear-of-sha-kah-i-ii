@@ -73,14 +73,17 @@
                 </condition>
                 <condition id="-33" name="Pick by comparison" sid="998686500299911" type="System">
                     <param id="0" name="Object">Sprite_Text</param>
-                    <param id="1" name="Expression">left(Sprite_Text.ButtonTag, 5)</param>
+                    <param id="1" name="Expression">(left(Sprite_Text.ButtonTag, 5) = &quot;hint-&quot; | Sprite_Text.ButtonTag = &quot;stage#&quot;) ? 7 : 0</param>
                     <param id="2" name="Comparison">0</param>
-                    <param id="3" name="Value">&quot;hint-&quot;</param>
+                    <param id="3" name="Value">7</param>
                 </condition>
                 <condition id="-36" name="Pick overlapping point" sid="6574324394148796" type="System">
                     <param id="0" name="Object">Text_Area</param>
                     <param id="1" name="X">Sprite_Player.X</param>
                     <param id="2" name="Y">Sprite_Player.Y</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="1844070632213662" type="TileBG_SystemDecorationUpper">
+                    <param id="0" name="Unique ID">67</param>
                 </condition>
             </conditions>
             <actions>
@@ -107,25 +110,8 @@
                     <param id="0" name="X">SpriteFont_StageNumber.X + SpriteFont_StageNumber.TextWidth + SpriteFont_StageNumber.CharacterSpacing * 2</param>
                 </action>
             </actions>
-        </event-block>
-        <comment>I didn&apos;t find anything useful to pick the decoration and the black.</comment>
-        <event-block sid="6534653350896566">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="8949187532903311" type="System" />
-                <condition id="-14" name="Pick by unique ID" sid="1844070632213662" type="TileBG_SystemDecorationUpper">
-                    <param id="0" name="Unique ID">67</param>
-                </condition>
-                <condition id="-14" name="Pick by unique ID" sid="9314276575613654" type="TileBG_Black">
-                    <param id="0" name="Unique ID">68</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="3958638804346749" type="Sprite_Text">
-                    <param id="0" name="Instance variable">ButtonTag</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;stage#&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
             <sub-events>
+                <comment>I didn&apos;t find anything useful to pick the decoration and the black.</comment>
                 <event-block sid="4889904908645909">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="7021255370685323" type="System">
@@ -142,7 +128,7 @@
                         <action id="-2" name="Set Y" sid="796540080053913" type="TileBG_SystemDecorationUpper">
                             <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="9927128997392443" type="TileBG_Black">
+                        <action id="-2" name="Set Y" sid="9927128997392443" type="Sprite_StagePrompt">
                             <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="5806718265382934" type="Sprite_Text">
@@ -163,7 +149,7 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
-                        <condition id="-2" name="Compare Y" sid="9234323248551186" type="TileBG_Black">
+                        <condition id="-2" name="Compare Y" sid="7582494586570515" type="Sprite_StagePrompt">
                             <param id="0" name="Comparison">2</param>
                             <param id="1" name="Y co-ordinate">0</param>
                         </condition>
@@ -172,7 +158,7 @@
                         <action id="-2" name="Set Y" sid="3023521357627349" type="TileBG_SystemDecorationUpper">
                             <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="1750986963080566" type="TileBG_Black">
+                        <action id="-2" name="Set Y" sid="6340445254733783" type="Sprite_StagePrompt">
                             <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="8382351511673764" type="Sprite_Text">
@@ -186,7 +172,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <variable constant="0" name="Move" sid="9586389518567567" static="0" type="number">0</variable>
+                <variable constant="0" name="Move" sid="6284945121057561" static="0" type="number">0</variable>
                 <event-block sid="4039208004303395">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="5285766133059349" type="System">
@@ -194,7 +180,7 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
-                        <condition id="-2" name="Compare Y" sid="2210792758169542" type="TileBG_Black">
+                        <condition id="-2" name="Compare Y" sid="9569121353949483" type="Sprite_StagePrompt">
                             <param id="0" name="Comparison">4</param>
                             <param id="1" name="Y co-ordinate">0</param>
                         </condition>
@@ -202,12 +188,12 @@
                     <actions>
                         <action id="-9" name="Set value" sid="1806586838027431" type="System">
                             <param id="0" name="Variable">Move</param>
-                            <param id="1" name="Value">TileBG_Black.Y</param>
+                            <param id="1" name="Value">Sprite_StagePrompt.Y</param>
                         </action>
                         <action id="-2" name="Set Y" sid="6098864740815563" type="TileBG_SystemDecorationUpper">
                             <param id="0" name="Y">Self.Y - Move</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="6104090631307452" type="TileBG_Black">
+                        <action id="-2" name="Set Y" sid="6104090631307452" type="Sprite_StagePrompt">
                             <param id="0" name="Y">0</param>
                         </action>
                         <action id="-2" name="Set Y" sid="1590695787124945" type="Sprite_Text">

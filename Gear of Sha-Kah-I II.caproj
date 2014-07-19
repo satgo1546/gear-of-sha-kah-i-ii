@@ -1534,6 +1534,14 @@
         <object-type name="Text_MusicTrigger" sid="7380092812398082">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite_StagePrompt" sid="7434235742217762">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3630544214690903" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
