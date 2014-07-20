@@ -209,24 +209,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="4786064026845997">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="5381617804050773" type="Keyboard">
-                    <param id="0" name="Key">27 (Esc)</param>
-                </condition>
-                <condition id="-8" name="Compare two values" sid="8154045516211774" type="System">
-                    <param id="0" name="First value">getbit(MHSState, 1)</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Second value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="5188433086607895" type="System">
-                    <param id="0" name="Variable">MHSState</param>
-                    <param id="1" name="Value">setbit(MHSState, 1, 0)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="2760774471505539">
             <conditions>
                 <condition id="0" name="On key pressed" sid="9488556330816395" type="Keyboard">
@@ -234,7 +216,7 @@
                 </condition>
                 <condition id="-8" name="Compare two values" sid="98374718321745" type="System">
                     <param id="0" name="First value">getbit(MHSState, 1)</param>
-                    <param id="1" name="Comparison">3</param>
+                    <param id="1" name="Comparison">0</param>
                     <param id="2" name="Second value">0</param>
                 </condition>
             </conditions>
@@ -242,6 +224,25 @@
                 <action id="-9" name="Set value" sid="7533365319106018" type="System">
                     <param id="0" name="Variable">MHSState</param>
                     <param id="1" name="Value">togglebit(MHSState, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4786064026845997">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5381617804050773" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="8154045516211774" type="System">
+                    <param id="0" name="First value">getbit(MHSState, 1)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="FadeOut" id="0" name="Restart fade" sid="3761746535505558" type="Sprite_Hints" />
+                <action id="-9" name="Set value" sid="8472837169550361" type="System">
+                    <param id="0" name="Variable">MHSState</param>
+                    <param id="1" name="Value">setbit(MHSState, 1, 0)</param>
                 </action>
             </actions>
         </event-block>

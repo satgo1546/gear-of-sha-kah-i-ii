@@ -261,6 +261,10 @@
                     </conditions>
                     <actions>
                         <action behavior="FadeIn" id="0" name="Restart fade" sid="2573041069110803" type="Sprite_Hints" />
+                        <action id="-9" name="Set value" sid="8868514377899037" type="System">
+                            <param id="0" name="Variable">MHSState</param>
+                            <param id="1" name="Value">setbit(MHSState, 1, 1)</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6459320576205836">
@@ -331,6 +335,10 @@
                     </conditions>
                     <actions>
                         <action behavior="FadeOut" id="0" name="Restart fade" sid="1811687813400258" type="Sprite_Hints" />
+                        <action id="-9" name="Set value" sid="6282190997948461" type="System">
+                            <param id="0" name="Variable">MHSState</param>
+                            <param id="1" name="Value">setbit(MHSState, 1, 0)</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
