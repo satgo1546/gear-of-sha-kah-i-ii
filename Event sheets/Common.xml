@@ -269,10 +269,10 @@
                 </event-block>
                 <event-block sid="6459320576205836">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="2207092260088858" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
+                        <condition id="-8" name="Compare two values" sid="1400653233876872" type="System">
+                            <param id="0" name="First value">(Sprite_Text.ButtonTag = &quot;instructions&quot; | Sprite_Text.ButtonTag = &quot;title&quot;) ? 7 : 0</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;instructions&quot;</param>
+                            <param id="2" name="Second value">7</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="4087613800707666" type="System">
                             <param id="0" name="First value">getbit(MHSState, 0)</param>
@@ -292,29 +292,10 @@
                         <action id="-16" name="Wait" sid="8340496957979062" type="System">
                             <param id="0" name="Seconds">0.4</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="7234714690741128" type="System">
-                            <param id="0" name="Layout">Instructions</param>
+                        <action id="-25" name="Go to layout (by name)" sid="1921624446637226" type="System">
+                            <param id="0" name="Layout">Sprite_Text.ButtonTag = &quot;title&quot; ? &quot;Title&quot; : &quot;Instructions&quot;</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="2259631626945817">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="9286238982519964" type="Sprite_Text">
-                            <param id="0" name="Instance variable">ButtonTag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;title&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="3947349785099067" type="System">
-                            <param id="0" name="First value">getbit(MHSState, 0)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">1</param>
-                        </condition>
-                        <condition id="-10" name="Compare opacity" sid="3041274069458684" type="Sprite_Hints">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Opacity">50</param>
-                        </condition>
-                    </conditions>
-                    <actions />
                 </event-block>
                 <event-block sid="1671166494131231">
                     <conditions>
