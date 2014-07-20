@@ -1544,6 +1544,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TileBG_TextGradientUpper" sid="8639382825780619">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
