@@ -4,10 +4,6 @@
     <name>Game</name>
     <events>
         <include>Common</include>
-        <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
-        <variable comment="0 = hide, 1 = show" constant="0" name="Hint" sid="5521178366453583" static="0" type="number">0</variable>
-        <variable comment="0 = hide, 1 = show" constant="0" name="StageName" sid="8293518811735569" static="0" type="number">0</variable>
-        <comment></comment>
         <variable comment="The visibility of Menu, Hint and StageName. Usage: getbit(MHSState, 0~2)." constant="0" name="MHSState" sid="500889531104055" static="0" type="number">0</variable>
         <comment>Binary: 0 - Menu, 1 - Hint, 2 - StageName</comment>
         <variable constant="0" name="Gears" sid="1514336597809996" static="0" type="number">0</variable>
