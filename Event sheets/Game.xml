@@ -145,7 +145,7 @@
                         <action id="-2" name="Set Y" sid="9927128997392443" type="Sprite_StagePrompt">
                             <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="5806718265382934" type="Sprite_Text">
+                        <action disabled="1" id="-2" name="Set Y" sid="5806718265382934" type="Sprite_Text">
                             <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="1526235696316779" type="SpriteFont_StageNumber">
@@ -180,7 +180,7 @@
                         <action id="-2" name="Set Y" sid="6340445254733783" type="Sprite_StagePrompt">
                             <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="8382351511673764" type="Sprite_Text">
+                        <action disabled="1" id="-2" name="Set Y" sid="8382351511673764" type="Sprite_Text">
                             <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
                         <action id="-2" name="Set Y" sid="9868509954288521" type="SpriteFont_StageNumber">
@@ -220,7 +220,7 @@
                         <action id="-2" name="Set Y" sid="6104090631307452" type="Sprite_StagePrompt">
                             <param id="0" name="Y">0</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="1590695787124945" type="Sprite_Text">
+                        <action disabled="1" id="-2" name="Set Y" sid="1590695787124945" type="Sprite_Text">
                             <param id="0" name="Y">Self.Y - Move</param>
                         </action>
                         <action id="-2" name="Set Y" sid="6997339414255068" type="SpriteFont_StageNumber">
