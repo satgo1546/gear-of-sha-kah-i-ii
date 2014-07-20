@@ -7,6 +7,9 @@
         <variable comment="0 = close, 1 = open" constant="0" name="Menu" sid="844473839764781" static="0" type="number">0</variable>
         <variable comment="0 = hide, 1 = show" constant="0" name="Hint" sid="5521178366453583" static="0" type="number">0</variable>
         <variable comment="0 = hide, 1 = show" constant="0" name="StageName" sid="8293518811735569" static="0" type="number">0</variable>
+        <comment></comment>
+        <variable comment="The visibility of Menu, Hint and StageName. Usage: getbit(MHSState, 0~2)." constant="0" name="MHSState" sid="500889531104055" static="0" type="number">0</variable>
+        <comment>Binary: 0 - Menu, 1 - Hint, 2 - StageName</comment>
         <variable constant="0" name="Gears" sid="1514336597809996" static="0" type="number">0</variable>
         <event-block sid="2105966368120164">
             <conditions>
@@ -79,9 +82,9 @@
                 </condition>
                 <condition id="-33" name="Pick by comparison" sid="998686500299911" type="System">
                     <param id="0" name="Object">Sprite_Text</param>
-                    <param id="1" name="Expression">(left(Sprite_Text.ButtonTag, 5) = &quot;hint-&quot; | Sprite_Text.ButtonTag = &quot;stage#&quot;) ? 7 : 0</param>
+                    <param id="1" name="Expression">left(Sprite_Text.ButtonTag, 5)</param>
                     <param id="2" name="Comparison">0</param>
-                    <param id="3" name="Value">7</param>
+                    <param id="3" name="Value">&quot;hint-&quot;</param>
                 </condition>
                 <condition id="-36" name="Pick overlapping point" sid="6574324394148796" type="System">
                     <param id="0" name="Object">Text_Area</param>
@@ -95,7 +98,7 @@
             <actions>
                 <action id="-18" name="Set layer opacity" sid="8963002477842934" type="System">
                     <param id="0" name="Layer">&quot;Menu&quot;</param>
-                    <param id="1" name="Opacity">LayerOpacity(&quot;Menu&quot;) + (0.25 / dt) * (Menu - 0.5)</param>
+                    <param id="1" name="Opacity">LayerOpacity(&quot;Menu&quot;) + (0.25 / dt) * (getbit(MHSState, 0) - 0.5)</param>
                 </action>
                 <action id="0" name="Set text" sid="7216719767045324" type="SpriteFont_StageNumber">
                     <param id="0" name="Text">tokenat(Text_Area.Text, 0, &quot;: &quot;)</param>
@@ -120,10 +123,15 @@
                 <comment>I didn&apos;t find anything useful to pick the decoration and the black.</comment>
                 <event-block sid="4889904908645909">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="7021255370685323" type="System">
+                        <condition disabled="1" id="-14" name="Compare variable" sid="7021255370685323" type="System">
                             <param id="0" name="Variable">StageName</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="8846539304887228" type="System">
+                            <param id="0" name="First value">getbit(MHSState, 2)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
                         </condition>
                         <condition id="-2" name="Compare Y" sid="8367447821994577" type="TileBG_SystemDecorationUpper">
                             <param id="0" name="Comparison">4</param>
@@ -150,10 +158,15 @@
                 </event-block>
                 <event-block sid="462335212326567">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="2015843158947163" type="System">
+                        <condition disabled="1" id="-14" name="Compare variable" sid="2015843158947163" type="System">
                             <param id="0" name="Variable">StageName</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="385068760503299" type="System">
+                            <param id="0" name="First value">getbit(MHSState, 2)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
                         </condition>
                         <condition id="-2" name="Compare Y" sid="7582494586570515" type="Sprite_StagePrompt">
                             <param id="0" name="Comparison">2</param>
@@ -181,10 +194,15 @@
                 <variable constant="0" name="Move" sid="6284945121057561" static="0" type="number">0</variable>
                 <event-block sid="4039208004303395">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="5285766133059349" type="System">
+                        <condition disabled="1" id="-14" name="Compare variable" sid="5285766133059349" type="System">
                             <param id="0" name="Variable">StageName</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="7569599641705266" type="System">
+                            <param id="0" name="First value">getbit(MHSState, 2)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
                         </condition>
                         <condition id="-2" name="Compare Y" sid="9569121353949483" type="Sprite_StagePrompt">
                             <param id="0" name="Comparison">4</param>
@@ -220,16 +238,25 @@
                 <condition id="0" name="On key pressed" sid="5381617804050773" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="6605209642547313" type="System">
+                <condition disabled="1" id="-14" name="Compare variable" sid="6605209642547313" type="System">
                     <param id="0" name="Variable">Hint</param>
                     <param id="1" name="Comparison">5</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="-8" name="Compare two values" sid="8154045516211774" type="System">
+                    <param id="0" name="First value">getbit(MHSState, 1)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="4383529051813868" type="System">
+                <action disabled="1" id="-9" name="Set value" sid="4383529051813868" type="System">
                     <param id="0" name="Variable">Hint</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5188433086607895" type="System">
+                    <param id="0" name="Variable">MHSState</param>
+                    <param id="1" name="Value">setbit(MHSState, 1, 0)</param>
                 </action>
             </actions>
         </event-block>
@@ -238,16 +265,25 @@
                 <condition id="0" name="On key pressed" sid="9488556330816395" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="5017864416639148" type="System">
+                <condition disabled="1" id="-14" name="Compare variable" sid="5017864416639148" type="System">
                     <param id="0" name="Variable">Hint</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-8" name="Compare two values" sid="98374718321745" type="System">
+                    <param id="0" name="First value">getbit(MHSState, 1)</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="6275730456452537" type="System">
+                <action disabled="1" id="-9" name="Set value" sid="6275730456452537" type="System">
                     <param id="0" name="Variable">Menu</param>
                     <param id="1" name="Value">1 - Menu</param>
+                </action>
+                <action id="-9" name="Set value" sid="7533365319106018" type="System">
+                    <param id="0" name="Variable">MHSState</param>
+                    <param id="1" name="Value">togglebit(MHSState, 0)</param>
                 </action>
             </actions>
         </event-block>
@@ -293,16 +329,24 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="276550764541315" type="System">
+                <action disabled="1" id="-9" name="Set value" sid="276550764541315" type="System">
                     <param id="0" name="Variable">StageName</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7942671560196767" type="System">
+                    <param id="0" name="Variable">MHSState</param>
+                    <param id="1" name="Value">setbit(MHSState, 2, 1)</param>
                 </action>
                 <action id="-16" name="Wait" sid="1734631639963997" type="System">
                     <param id="0" name="Seconds">1.5</param>
                 </action>
-                <action id="-9" name="Set value" sid="7049880989788167" type="System">
+                <action disabled="1" id="-9" name="Set value" sid="7049880989788167" type="System">
                     <param id="0" name="Variable">StageName</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4237376774614883" type="System">
+                    <param id="0" name="Variable">MHSState</param>
+                    <param id="1" name="Value">setbit(MHSState, 2, 0)</param>
                 </action>
             </actions>
         </event-block>
