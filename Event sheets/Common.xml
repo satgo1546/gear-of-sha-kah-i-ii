@@ -212,10 +212,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action disabled="1" id="-9" name="Set value" sid="6723013211050059" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                         <action id="-9" name="Set value" sid="420095593198144" type="System">
                             <param id="0" name="Variable">MHSState</param>
                             <param id="1" name="Value">setbit(MHSState, 0, 1)</param>
@@ -229,11 +225,6 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;resume&quot;</param>
                         </condition>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="2500845876985638" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="5453560588330364" type="System">
                             <param id="0" name="First value">getbit(MHSState, 0)</param>
                             <param id="1" name="Comparison">0</param>
@@ -245,10 +236,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action disabled="1" id="-9" name="Set value" sid="8399056288057013" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
                         <action id="-9" name="Set value" sid="6397542077278102" type="System">
                             <param id="0" name="Variable">MHSState</param>
                             <param id="1" name="Value">setbit(MHSState, 0, 0)</param>
@@ -261,11 +248,6 @@
                             <param id="0" name="Instance variable">ButtonTag</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;hint&quot;</param>
-                        </condition>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="6067025812542511" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="1193014323586893" type="System">
                             <param id="0" name="First value">getbit(MHSState, 0)</param>
@@ -287,11 +269,6 @@
                             <param id="0" name="Instance variable">ButtonTag</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;instructions&quot;</param>
-                        </condition>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="7117202979548127" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="4087613800707666" type="System">
                             <param id="0" name="First value">getbit(MHSState, 0)</param>
@@ -323,11 +300,6 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;title&quot;</param>
                         </condition>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="276753392173765" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="3947349785099067" type="System">
                             <param id="0" name="First value">getbit(MHSState, 0)</param>
                             <param id="1" name="Comparison">0</param>
@@ -346,11 +318,6 @@
                             <param id="0" name="Instance variable">ButtonTag</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;hint-resume&quot;</param>
-                        </condition>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="5768625134272548" type="System">
-                            <param id="0" name="Variable">Menu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="485302331379878" type="System">
                             <param id="0" name="First value">getbit(MHSState, 0)</param>

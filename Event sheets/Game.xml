@@ -123,11 +123,6 @@
                 <comment>I didn&apos;t find anything useful to pick the decoration and the black.</comment>
                 <event-block sid="4889904908645909">
                     <conditions>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="7021255370685323" type="System">
-                            <param id="0" name="Variable">StageName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="8846539304887228" type="System">
                             <param id="0" name="First value">getbit(MHSState, 2)</param>
                             <param id="1" name="Comparison">0</param>
@@ -145,9 +140,6 @@
                         <action id="-2" name="Set Y" sid="9927128997392443" type="Sprite_StagePrompt">
                             <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
-                        <action disabled="1" id="-2" name="Set Y" sid="5806718265382934" type="Sprite_Text">
-                            <param id="0" name="Y">Self.Y - 500 * dt</param>
-                        </action>
                         <action id="-2" name="Set Y" sid="1526235696316779" type="SpriteFont_StageNumber">
                             <param id="0" name="Y">Self.Y - 500 * dt</param>
                         </action>
@@ -158,11 +150,6 @@
                 </event-block>
                 <event-block sid="462335212326567">
                     <conditions>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="2015843158947163" type="System">
-                            <param id="0" name="Variable">StageName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="385068760503299" type="System">
                             <param id="0" name="First value">getbit(MHSState, 2)</param>
                             <param id="1" name="Comparison">0</param>
@@ -180,9 +167,6 @@
                         <action id="-2" name="Set Y" sid="6340445254733783" type="Sprite_StagePrompt">
                             <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
-                        <action disabled="1" id="-2" name="Set Y" sid="8382351511673764" type="Sprite_Text">
-                            <param id="0" name="Y">Self.Y + 500 * dt</param>
-                        </action>
                         <action id="-2" name="Set Y" sid="9868509954288521" type="SpriteFont_StageNumber">
                             <param id="0" name="Y">Self.Y + 500 * dt</param>
                         </action>
@@ -194,11 +178,6 @@
                 <variable constant="0" name="Move" sid="6284945121057561" static="0" type="number">0</variable>
                 <event-block sid="4039208004303395">
                     <conditions>
-                        <condition disabled="1" id="-14" name="Compare variable" sid="5285766133059349" type="System">
-                            <param id="0" name="Variable">StageName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="7569599641705266" type="System">
                             <param id="0" name="First value">getbit(MHSState, 2)</param>
                             <param id="1" name="Comparison">0</param>
@@ -220,9 +199,6 @@
                         <action id="-2" name="Set Y" sid="6104090631307452" type="Sprite_StagePrompt">
                             <param id="0" name="Y">0</param>
                         </action>
-                        <action disabled="1" id="-2" name="Set Y" sid="1590695787124945" type="Sprite_Text">
-                            <param id="0" name="Y">Self.Y - Move</param>
-                        </action>
                         <action id="-2" name="Set Y" sid="6997339414255068" type="SpriteFont_StageNumber">
                             <param id="0" name="Y">Self.Y - Move</param>
                         </action>
@@ -238,11 +214,6 @@
                 <condition id="0" name="On key pressed" sid="5381617804050773" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
-                <condition disabled="1" id="-14" name="Compare variable" sid="6605209642547313" type="System">
-                    <param id="0" name="Variable">Hint</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
                 <condition id="-8" name="Compare two values" sid="8154045516211774" type="System">
                     <param id="0" name="First value">getbit(MHSState, 1)</param>
                     <param id="1" name="Comparison">5</param>
@@ -250,10 +221,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action disabled="1" id="-9" name="Set value" sid="4383529051813868" type="System">
-                    <param id="0" name="Variable">Hint</param>
-                    <param id="1" name="Value">0</param>
-                </action>
                 <action id="-9" name="Set value" sid="5188433086607895" type="System">
                     <param id="0" name="Variable">MHSState</param>
                     <param id="1" name="Value">setbit(MHSState, 1, 0)</param>
@@ -265,11 +232,6 @@
                 <condition id="0" name="On key pressed" sid="9488556330816395" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
-                <condition disabled="1" id="-14" name="Compare variable" sid="5017864416639148" type="System">
-                    <param id="0" name="Variable">Hint</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
                 <condition id="-8" name="Compare two values" sid="98374718321745" type="System">
                     <param id="0" name="First value">getbit(MHSState, 1)</param>
                     <param id="1" name="Comparison">3</param>
@@ -277,10 +239,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action disabled="1" id="-9" name="Set value" sid="6275730456452537" type="System">
-                    <param id="0" name="Variable">Menu</param>
-                    <param id="1" name="Value">1 - Menu</param>
-                </action>
                 <action id="-9" name="Set value" sid="7533365319106018" type="System">
                     <param id="0" name="Variable">MHSState</param>
                     <param id="1" name="Value">togglebit(MHSState, 0)</param>
@@ -329,20 +287,12 @@
                 </condition>
             </conditions>
             <actions>
-                <action disabled="1" id="-9" name="Set value" sid="276550764541315" type="System">
-                    <param id="0" name="Variable">StageName</param>
-                    <param id="1" name="Value">1</param>
-                </action>
                 <action id="-9" name="Set value" sid="7942671560196767" type="System">
                     <param id="0" name="Variable">MHSState</param>
                     <param id="1" name="Value">setbit(MHSState, 2, 1)</param>
                 </action>
                 <action id="-16" name="Wait" sid="1734631639963997" type="System">
                     <param id="0" name="Seconds">1.5</param>
-                </action>
-                <action disabled="1" id="-9" name="Set value" sid="7049880989788167" type="System">
-                    <param id="0" name="Variable">StageName</param>
-                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="4237376774614883" type="System">
                     <param id="0" name="Variable">MHSState</param>
