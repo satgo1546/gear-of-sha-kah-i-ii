@@ -202,6 +202,20 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="1765406084335386">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8575849785710027" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;silent&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Set silent" sid="2187474417284668" type="Audio">
+                            <param id="0" name="Mode">2</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>↓ Game</comment>
                 <event-block sid="7114090878066844">
                     <conditions>
@@ -525,6 +539,36 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7468464447859844">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4304479207780952" type="Sprite_Text">
+                    <param id="0" name="Instance variable">ButtonTag</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;silent&quot;</param>
+                </condition>
+                <condition id="3" name="Is silent" sid="1894740720798298" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5111439900480521" type="Sprite_Text">
+                    <param id="0" name="Frame number">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="115732957534603">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8461957824348961" type="Sprite_Text">
+                    <param id="0" name="Instance variable">ButtonTag</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;silent&quot;</param>
+                </condition>
+                <condition id="3" inverted="1" name="Is silent" sid="9553524235621058" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5910470625492523" type="Sprite_Text">
+                    <param id="0" name="Frame number">39</param>
                 </action>
             </actions>
         </event-block>
