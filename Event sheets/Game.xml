@@ -32,6 +32,12 @@
                 <action id="6" name="Stop" sid="7078740543866713" type="Audio">
                     <param id="0" name="Tag">&quot;scene-bgm&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="8126856388685915" type="Audio">
+                    <param id="0" name="Audio file">Field</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;game-bgm-Field&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="9863702040335516">

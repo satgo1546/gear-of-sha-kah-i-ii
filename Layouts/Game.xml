@@ -12316,7 +12316,7 @@
                 </instance>
                 <instance type="Text_MusicTrigger" uid="5">
                     <properties>
-                        <text>Field</text>
+                        <text>CaveB1</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-13,400,0</font>
                         <color>0,0,0</color>
@@ -12329,11 +12329,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>96</x>
-                        <y>320</y>
+                        <x>2496</x>
+                        <y>640</y>
                         <z>0</z>
                         <width>32</width>
-                        <height>32</height>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -12387,6 +12387,33 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.84375</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text_MusicTrigger" uid="598">
+                    <properties>
+                        <text>Field</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-13,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2496</x>
+                        <y>544</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
