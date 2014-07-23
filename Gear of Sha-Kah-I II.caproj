@@ -1548,6 +1548,26 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="Sprite_EndingImage" sid="3390860113819227">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="7679562219485239">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2633124390299377" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+                <animation framecount="5" loop="0" name="MovingSlime" pingpong="0" repeatcount="1" repeatto="0" sid="1380567070000295" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
