@@ -5,7 +5,7 @@
     <event-sheet>OP&amp;ED</event-sheet>
     <size>
         <width>640</width>
-        <height>2688</height>
+        <height>3232</height>
     </size>
     <margins>
         <horizontal>32</horizontal>
@@ -54,7 +54,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>640</y>
+                        <y>544</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
@@ -76,7 +76,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>1312</y>
+                        <y>1216</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
@@ -98,7 +98,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>1984</y>
+                        <y>1888</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
@@ -120,7 +120,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>2656</y>
+                        <y>2560</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
@@ -208,26 +208,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TileBG_SystemDecorationLower" uid="602">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>0</x>
-                        <y>96</y>
-                        <z>0</z>
-                        <width>1280</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sprite_EndingImage" uid="605">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -241,9 +221,9 @@
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Horizontal</movement>
                                 <wave>Reverse sawtooth</wave>
-                                <period>5</period>
+                                <period>8</period>
                                 <period-random>0</period-random>
-                                <period-offset>2.5</period-offset>
+                                <period-offset>4</period-offset>
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>320</magnitude>
                                 <magnitude-random>0</magnitude-random>
@@ -315,9 +295,9 @@
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Horizontal</movement>
                                 <wave>Reverse sawtooth</wave>
-                                <period>5</period>
+                                <period>8</period>
                                 <period-random>0</period-random>
-                                <period-offset>2.5</period-offset>
+                                <period-offset>4</period-offset>
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>320</magnitude>
                                 <magnitude-random>0</magnitude-random>
@@ -335,6 +315,26 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TileBG_SystemDecorationLower" uid="602">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>1280</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
