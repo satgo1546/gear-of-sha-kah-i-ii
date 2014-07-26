@@ -54,7 +54,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>544</y>
+                        <y>896</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
@@ -76,7 +76,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>1216</y>
+                        <y>1568</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
@@ -98,7 +98,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>1888</y>
+                        <y>2240</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
@@ -120,13 +120,35 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>2560</y>
+                        <y>2912</y>
                         <z>0</z>
                         <width>640</width>
                         <height>672</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_Ending" uid="622">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>4</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>371</width>
+                        <height>110</height>
+                        <depth>0</depth>
+                        <hotspotX>-0.040431269</hotspotX>
+                        <hotspotY>-0.127272725</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
