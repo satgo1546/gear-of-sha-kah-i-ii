@@ -37,6 +37,9 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;game-bgm-Field&quot;</param>
                 </action>
+                <action id="4" name="Load" sid="4181607492238295" type="Dictionary_HintFrames">
+                    <param id="0" name="JSON">&quot;{&quot;&quot;c2dictionary&quot;&quot;:true,&quot;&quot;data&quot;&quot;:{&quot;&quot;1&quot;&quot;:1,&quot;&quot;3&quot;&quot;:2,&quot;&quot;4&quot;&quot;:3,&quot;&quot;5&quot;&quot;:4,&quot;&quot;6&quot;&quot;:5,&quot;&quot;14&quot;&quot;:6,&quot;&quot;15-2&quot;&quot;:6,&quot;&quot;15-3&quot;&quot;:7,&quot;&quot;20-2&quot;&quot;:8}}&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="9863702040335516">
@@ -113,6 +116,9 @@
                 </action>
                 <action id="-1" name="Set X" sid="3292547231979223" type="SpriteFont_StageName">
                     <param id="0" name="X">SpriteFont_StageNumber.X + SpriteFont_StageNumber.TextWidth + SpriteFont_StageNumber.CharacterSpacing * 2</param>
+                </action>
+                <action id="5" name="Set frame" sid="5026221324370561" type="Sprite_Hints">
+                    <param id="0" name="Frame number">Dictionary_HintFrames.Get(SpriteFont_StageNumber.Text)</param>
                 </action>
             </actions>
             <sub-events>
