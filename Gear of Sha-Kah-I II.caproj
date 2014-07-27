@@ -1589,7 +1589,7 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                     <frame duration="1" hotspotX="0" hotspotY="0" />
-                    <frame duration="1" hotspotX="-0.0404313" hotspotY="-0.127273" />
+                    <frame duration="1" hotspotX="-0.0404313" hotspotY="-0.136364" />
                 </animation>
             </animation-folder>
         </object-type>
