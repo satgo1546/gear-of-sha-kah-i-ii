@@ -1680,7 +1680,7 @@
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
-        <object-type name="Sprite_EndingScoreMax" sid="8577141677632458">
+        <object-type name="Sprite_EndingScoreMaximum" sid="8577141677632458">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8214452740793394" speed="5">

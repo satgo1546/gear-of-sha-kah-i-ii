@@ -413,7 +413,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_EndingScoreMax" uid="625">
+                <instance type="Sprite_EndingScoreMaximum" uid="625">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
