@@ -395,7 +395,7 @@
                         <vertical-alignment>Bottom</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
-                        <character-spacing>2</character-spacing>
+                        <character-spacing>6</character-spacing>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
