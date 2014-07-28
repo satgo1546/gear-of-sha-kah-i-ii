@@ -1699,6 +1699,11 @@
         </object-type>
         <object-type name="Sprite_EndingScoreTitle" sid="6173570980565459">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="4991713247828446">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6225660546146176" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.486486">

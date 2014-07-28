@@ -43,6 +43,9 @@
                 <action id="0" name="Set text" sid="2641318747853027" type="SpriteFont_EndingScore">
                     <param id="0" name="Text">str(Gears)</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="9043172945845677" type="Sprite_EndingScoreTitle">
+                    <param id="0" name="Opacity">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3570799193549998">
@@ -52,6 +55,15 @@
             <actions>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="6867531511115407" type="Camera">
                     <param id="0" name="Control">3</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7764515491345536" type="Sprite_EndingLevel">
+                    <param id="0" name="Opacity">Sprite_EndingScoreTitle.Opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="4213419276389023" type="SpriteFont_EndingScore">
+                    <param id="0" name="Opacity">Sprite_EndingScoreTitle.Opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2279956114044145" type="Sprite_EndingScoreMaximum">
+                    <param id="0" name="Opacity">Sprite_EndingScoreTitle.Opacity</param>
                 </action>
             </actions>
         </event-block>
@@ -98,7 +110,7 @@
             </conditions>
             <actions>
                 <action id="-16" name="Wait" sid="2463295922384046" type="System">
-                    <param id="0" name="Seconds">6</param>
+                    <param id="0" name="Seconds">10</param>
                 </action>
                 <action id="0" name="Call function" sid="2199903746564677" type="Function">
                     <param id="0" name="Name">&quot;fade&quot;</param>
@@ -129,6 +141,23 @@
                     <param id="0" name="Layer">&quot;Map&quot;</param>
                     <param id="1" name="Opacity">100 - (Camera.Y - 2880) / 0.96</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="8143373782452779">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="3607106440192472" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Ending&quot;</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="5677022638747046" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">3360</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="5716592393258798" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="9121237549061772" type="Sprite_EndingScoreTitle" />
             </actions>
         </event-block>
     </events>
