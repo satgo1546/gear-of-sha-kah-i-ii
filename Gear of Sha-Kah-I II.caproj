@@ -1697,6 +1697,23 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite_EndingScoreTitle" sid="6173570980565459">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6225660546146176" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.486486">
+                        <collision-poly>
+                            <point x="0.297297" y="0.0810811" />
+                            <point x="0.702703" y="0.0810811" />
+                            <point x="0.932432" y="0.486486" />
+                            <point x="0.72973" y="0.945946" />
+                            <point x="0.297297" y="0.891892" />
+                            <point x="0.0810811" y="0.486486" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
