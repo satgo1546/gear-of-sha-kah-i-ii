@@ -1670,6 +1670,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SpriteFont_EndingScore" sid="9364723968784684">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
