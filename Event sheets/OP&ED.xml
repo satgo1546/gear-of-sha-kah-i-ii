@@ -46,6 +46,24 @@
                 <action id="-16" name="Set opacity" sid="9043172945845677" type="Sprite_EndingScoreTitle">
                     <param id="0" name="Opacity">0</param>
                 </action>
+                <action id="5" name="Set frame" sid="1836656676068679" type="Sprite_EndingLevel">
+                    <param id="0" name="Frame number">Gears &gt;= 400 ? 0 : (Gears &gt;= 350 ? 1 : (Gears &gt;= 220 ? 2 : (Gears &gt;= 130 ? 3 : (Gears &gt;= 25 ? 4 : (Gears &lt;= 0 ? 5 : 6)))))</param>
+                </action>
+                <action id="-3" name="Set position" sid="2620954987019211" type="Sprite_EndingLevel">
+                    <param id="0" name="X">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 256 : Self.X</param>
+                    <param id="1" name="Y">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 384 : Self.Y</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1939151872901555" type="Sprite_EndingScoreTitle">
+                    <param id="0" name="Y">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 256 : Self.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="6012844988449645" type="SpriteFont_EndingScore">
+                    <param id="0" name="X">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 432 : Self.X</param>
+                    <param id="1" name="Y">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 288 : Self.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="8596744942412892" type="Sprite_EndingScoreMaximum">
+                    <param id="0" name="X">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 624: Self.X</param>
+                    <param id="1" name="Y">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 448 : Self.Y</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3570799193549998">
