@@ -7,6 +7,9 @@
         <event-block sid="6452347173183109">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3998394253885816" type="System" />
+                <condition id="-16" name="Is on layer" sid="6540461098276205" type="TileBG_SystemDecorationLower">
+                    <param id="0" name="Layer">&quot;Background&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="8Direction" id="4" name="Set max speed" sid="1494760892629417" type="Camera">
@@ -63,6 +66,9 @@
                 <action id="-3" name="Set position" sid="8596744942412892" type="Sprite_EndingScoreMaximum">
                     <param id="0" name="X">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 624: Self.X</param>
                     <param id="1" name="Y">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 448 : Self.Y</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6048967542364316" type="TileBG_SystemDecorationLower">
+                    <param id="0" name="Opacity">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 0 : 100</param>
                 </action>
             </actions>
         </event-block>
