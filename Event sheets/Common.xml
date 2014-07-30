@@ -572,5 +572,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5245512030406076">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9323866223520101" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="5473229788378779" type="System">
+                    <param id="0" name="First value">find(&quot;Load|Save|Instructions&quot;, LayoutName)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="2320161159014111" type="Function">
+                    <param id="0" name="Name">&quot;fade&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="3451208060362721" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="128584464234946" type="System">
+                    <param id="0" name="Layout">LayoutName = &quot;Load&quot; ? &quot;Title&quot; : &quot;Game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
