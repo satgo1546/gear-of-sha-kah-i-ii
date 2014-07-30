@@ -12,9 +12,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="4" name="Set max speed" sid="1494760892629417" type="Camera">
-                    <param id="0" name="Max Speed">30</param>
-                </action>
                 <action id="5" name="Set character width" sid="5753654343478822" type="SpriteFont_EndingScore">
                     <param id="0" name="Character">&quot;1&quot;</param>
                     <param id="1" name="Width">32</param>
