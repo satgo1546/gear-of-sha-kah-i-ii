@@ -52,10 +52,10 @@
                         <y>240</y>
                         <z>0</z>
                         <width>640</width>
-                        <height>319</height>
+                        <height>480</height>
                         <depth>0</depth>
-                        <hotspotX>0.501562476</hotspotX>
-                        <hotspotY>0.501567423</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
