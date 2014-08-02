@@ -4,6 +4,7 @@
     <name>OP&amp;ED</name>
     <events>
         <include>Common</include>
+        <comment>通常玩家获取的齿轮数量至少是大约70个。如果不进行某些特殊手段而获得0分是不可能的。</comment>
         <event-block sid="6452347173183109">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3998394253885816" type="System" />
