@@ -47,7 +47,7 @@
                     <param id="0" name="Opacity">0</param>
                 </action>
                 <action id="5" name="Set frame" sid="1836656676068679" type="Sprite_EndingLevel">
-                    <param id="0" name="Frame number">Gears &gt;= 400 ? 0 : (Gears &gt;= 350 ? 1 : (Gears &gt;= 220 ? 2 : (Gears &gt;= 130 ? 3 : (Gears &gt;= 25 ? 4 : (Gears &lt;= 0 ? 5 : 6)))))</param>
+                    <param id="0" name="Frame number">Gears &gt;= 400 ? 0 : (Gears &gt;= 320 ? 1 : (Gears &gt;= 240 ? 2 : (Gears &gt;= 160 ? 3 : (Gears &gt;= 80 ? 4 : (Gears &lt;= 0 ? 5 : 6)))))</param>
                 </action>
                 <action id="-3" name="Set position" sid="2620954987019211" type="Sprite_EndingLevel">
                     <param id="0" name="X">Sprite_EndingLevel.AnimationFrame &gt;= 5 ? 256 : Self.X</param>
