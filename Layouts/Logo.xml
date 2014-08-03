@@ -51,11 +51,11 @@
                         <x>320</x>
                         <y>240</y>
                         <z>0</z>
-                        <width>640</width>
-                        <height>480</height>
+                        <width>642</width>
+                        <height>159</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.716981113</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
