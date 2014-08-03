@@ -265,6 +265,32 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Sprite_Text" uid="634">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>42</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Button>true</Button>
+                        <ButtonTag>github</ButtonTag>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>320</x>
+                        <y>288</y>
+                        <z>0</z>
+                        <width>453</width>
+                        <height>39</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501103759</hotspotX>
+                        <hotspotY>0.512820542</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

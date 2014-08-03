@@ -336,6 +336,21 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="1951862543787409">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1834671495711431" type="Sprite_Text">
+                            <param id="0" name="Instance variable">ButtonTag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;github&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Open URL in new window" sid="1594686381026664" type="Browser">
+                            <param id="0" name="URL">&quot;https://github.com/satgo1546/gear-of-sha-kah-i-ii&quot;</param>
+                            <param id="1" name="Tag">&quot;github-gos2&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <comment>MovingDecorations</comment>
