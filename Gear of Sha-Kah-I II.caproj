@@ -1578,10 +1578,10 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6585127483688631" speed="0">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.00155763" hotspotY="-0.0248344" />
+                    <frame duration="1" hotspotX="-0.483077" hotspotY="0" />
+                    <frame duration="1" hotspotX="-0.418338" hotspotY="0.00148368" />
+                    <frame duration="1" hotspotX="-0.391061" hotspotY="0.00225734" />
                     <frame duration="1" hotspotX="-0.0404313" hotspotY="-0.136364" />
                 </animation>
             </animation-folder>
