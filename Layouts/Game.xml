@@ -12317,7 +12317,7 @@
                 <instance type="Text_MusicTrigger" uid="5">
                     <properties>
                         <text>CaveB1</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
@@ -12394,7 +12394,7 @@
                 <instance type="Text_MusicTrigger" uid="598">
                     <properties>
                         <text>Field</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-13,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
