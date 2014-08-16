@@ -27,6 +27,7 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
@@ -627,6 +628,9 @@
                 </behavior-type>
                 <behavior-type name="Persist" sid="4921366822382275">
                     <behavior id="Persist" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="3446952997562795">
+                    <behavior id="DragnDrop" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">

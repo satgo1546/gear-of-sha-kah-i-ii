@@ -104,6 +104,7 @@
                 <condition id="-4" name="Trigger once while true" sid="3027783629634631" type="System" />
             </conditions>
             <actions>
+                <action id="-21" name="Reset global variables" sid="4443916272257237" type="System" />
                 <action id="0" name="Call function" sid="1173855069992249" type="Function">
                     <param id="0" name="Name">&quot;fade&quot;</param>
                     <param id="1" name="Parameter {n}">&quot;out&quot;{###}&quot;black&quot;</param>
@@ -153,15 +154,11 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Second value">&quot;Ending&quot;</param>
                 </condition>
-                <condition id="-2" name="Compare Y" sid="9686515615510421" type="Camera">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="Y co-ordinate">2880</param>
-                </condition>
             </conditions>
             <actions>
                 <action id="-18" name="Set layer opacity" sid="7508204146324153" type="System">
                     <param id="0" name="Layer">&quot;Map&quot;</param>
-                    <param id="1" name="Opacity">100 - (Camera.Y - 2880) / 0.96</param>
+                    <param id="1" name="Opacity">clamp(100 - (Camera.Y - 2880) / 0.96, 0, 100)</param>
                 </action>
             </actions>
         </event-block>
