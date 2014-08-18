@@ -40,10 +40,6 @@
                 <action id="4" name="Load" sid="4181607492238295" type="Dictionary_HintFrames">
                     <param id="0" name="JSON">&quot;{&quot;&quot;c2dictionary&quot;&quot;:true,&quot;&quot;data&quot;&quot;:{&quot;&quot;1&quot;&quot;:1,&quot;&quot;3&quot;&quot;:2,&quot;&quot;4&quot;&quot;:3,&quot;&quot;5&quot;&quot;:4,&quot;&quot;6&quot;&quot;:5,&quot;&quot;14&quot;&quot;:6,&quot;&quot;15-2&quot;&quot;:6,&quot;&quot;15-3&quot;&quot;:7,&quot;&quot;20-2&quot;&quot;:8}}&quot;</param>
                 </action>
-                <action id="-3" name="Set position" sid="3153982805424718" type="Sprite_Player">
-                    <param id="0" name="X">32</param>
-                    <param id="1" name="Y">32</param>
-                </action>
             </actions>
             <sub-events>
                 <event-block sid="9863702040335516">
